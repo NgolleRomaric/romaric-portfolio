@@ -1,6 +1,6 @@
 import Image from "next/image";
 import LogoRomaric from "@/public/logo 1.svg";
-//import IconCall from "@/public/call icon.svg";
+import IconCall from "@/public/call icon.svg";
 import { Sun, AlignRight } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
@@ -59,10 +59,15 @@ export default function NavBar() {
           </ul>
         </nav>
         <div className="flex items-center justify-between gap-5">
-          <Button className="px-6 py-5 text-md text-white font-medium bg-gradient-to-r from-black from-[65%] to-[#666666] to-[100%] border-0 hover:opacity-80 transition-opacity">
-            Book a call
-          </Button>
-          <div className="flex items-center bg-secondary rounded-full p-2">
+          <div className="hidden lg:inline-block">
+            <Button className="px-6 py-5 text-md text-white font-medium bg-gradient-to-r from-black from-[65%] to-[#666666] to-[100%] border-0 hover:opacity-80 transition-opacity">
+              Book a call{" "}
+              <span>
+                <Image src={IconCall} alt="IconCall" />
+              </span>
+            </Button>
+          </div>
+          <div className="flex items-center bg-secondary rounded-full p-2 cursor-pointer">
             <Sun size={32} strokeWidth={1.5} className="text-black/30" />
           </div>
         </div>

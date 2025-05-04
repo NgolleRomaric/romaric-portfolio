@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import PP from "@/public/pp linkedin.jpg";
+import IconCall from "@/public/call icon.svg";
 import { Badge } from "@/components/ui/badge";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
@@ -21,7 +22,7 @@ export default function Hero() {
             👋 Hi, I’m{" "}
             <span className="text-primary font-bold">Romaric Ngolle</span>
           </h2>
-          <h2 className="max-w-80 lg:max-w-xl text-center">
+          <h2 className="max-w-80 md:max-w-md lg:max-w-xl text-center">
             I’m a{" "}
             <span className="font-bold text-[#C4C4C4]">Creative Developer</span>
             . I design visual identities, intuitive interfaces, and bring them
@@ -30,10 +31,13 @@ export default function Hero() {
         </div>
         <div className="flex flex-col lg:flex-row  items-center justify-center gap-4 lg:gap-12">
           <Button className="px-6 py-5 text-md text-black font-medium bg-white hover:bg-white hover:opacity-50 transition-opacity">
-            View my work <ArrowRight className="w-5 h-5 ml-1" />
+            View my work <ArrowRight className="ml-1" />
           </Button>
           <Button className="px-6 py-5 text-md text-white font-medium bg-gradient-to-r from-black from-[65%] to-[#666666] to-[100%] border-0 hover:opacity-80 transition-opacity">
             Book a call
+            <span>
+              <Image src={IconCall} alt="IconCall" />
+            </span>
           </Button>
         </div>
       </div>
