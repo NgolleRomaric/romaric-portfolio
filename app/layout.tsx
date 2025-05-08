@@ -1,6 +1,7 @@
 //import { ThemeProvider } from "@/components/theme-provider";
 import type { Metadata } from "next";
 import { Space_Grotesk } from "next/font/google";
+import { SmoothCursor } from "@/components/ui/smooth-cursor";
 import "./globals.css";
 
 const spaceGrotesk = Space_Grotesk({
@@ -32,6 +33,7 @@ export default function RootLayout({
           */}
         {children}
         {/* </ThemeProvider> */}
+        <SmoothCursor />
       </body>
     </html>
   );

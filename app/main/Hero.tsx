@@ -3,6 +3,7 @@ import PP from "@/public/pp linkedin.jpg";
 import IconCall from "@/public/call icon.svg";
 import { Badge } from "@/components/ui/badge";
 import { ArrowRight } from "lucide-react";
+//import { TextAnimate } from "@/components/magicui/text-animate";
 import Image from "next/image";
 
 export default function Hero() {
@@ -18,7 +19,7 @@ export default function Hero() {
           className="w-30 h-auto rounded-full border-6 border-white shadow-xl mx-auto"
         />
         <div className="text-2xl lg:text-3xl font-medium flex flex-col items-center">
-          <h2 className="">
+          <h2>
             👋 Hi, I’m{" "}
             <span className="text-primary font-bold">Romaric Ngolle</span>
           </h2>
