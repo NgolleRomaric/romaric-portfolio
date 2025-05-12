@@ -1,11 +1,14 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { ArrowUpRight } from "lucide-react";
+import ImageZenya from "@/public/zenya.jpg";
+import { ArrowUpRight, ArrowRight } from "lucide-react";
+import Image from "next/image";
+import { Button } from "@/components/ui/button";
 
 export default function Projects() {
   return (
     <section className="py-20">
-      <div className="container mx-auto">
+      <div className="flex flex-col items-center justify-center smx-auto">
         <div className="text-center text-white text-md font-medium bg-primary rounded-md px-2.5 py-2 mx-auto w-fit">
           Projects
         </div>
@@ -13,9 +16,15 @@ export default function Projects() {
           A showcase of real-world projects where design meets code and vision
           becomes experience.
         </h2>
-        <div className="flex flex-wrap mt-12 gap-2.5 md:max-w-3xl lg:max-w-5xl mx-auto">
-          <Card className="flex flex-rows items-center justify-center rounded-2xl bg-card p-5 max-w-sm mx-auto">
-            <div className="w-[350px] h-[289px] rounded-2xl"></div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-2.5 mt-12 md:max-w-2xl lg:max-w-5xl mx-auto">
+          <Card className="flex flex-rows bg-white border border-white hover:bg-card hover:border hover:border-black/20 transition-all duration-300 items-center justify-center rounded-2xl p-5">
+            <div>
+              <Image
+                src={ImageZenya}
+                alt="alt"
+                className="w-[350px] h-[289px] lg:w-[539px] rounded-2xl object-cover"
+              />
+            </div>
             <div className="ml-2.5">
               <div>
                 <h3 className="text-xl font-medium">Zenya - Wellness Spa</h3>
@@ -24,11 +33,11 @@ export default function Projects() {
                 </Badge>
               </div>
               <div className="flex items-center justify-center gap-4 mt-3">
-                <p className="text-black/70">
+                <p className="text-black/70 lg:max-w-xl">
                   A calming and luxurious brand identity for a modern spa
                   experience.
                 </p>
-                <div className="p-1.5 bg-primary rounded-full mr-2">
+                <div className="p-1.5 bg-primary rounded-full mr-2 hover:opacity-50 transition-opacity">
                   <ArrowUpRight
                     size={32}
                     strokeWidth={2}
@@ -38,8 +47,14 @@ export default function Projects() {
               </div>
             </div>
           </Card>
-          <Card className="flex flex-rows items-center justify-center rounded-2xl bg-card p-5 max-w-sm mx-auto">
-            <div className="w-[350px] h-[289px] rounded-2xl"></div>
+          <Card className="flex flex-rows bg-white border border-white hover:bg-card hover:border hover:border-black/20 transition-all duration-300 items-center justify-center rounded-2xl p-5">
+            <div>
+              <Image
+                src={ImageZenya}
+                alt="alt"
+                className="w-[350px] h-[289px] lg:w-[539px] rounded-2xl object-cover"
+              />
+            </div>
             <div className="ml-2.5">
               <div>
                 <h3 className="text-xl font-medium">Zenya - Wellness Spa</h3>
@@ -48,11 +63,71 @@ export default function Projects() {
                 </Badge>
               </div>
               <div className="flex items-center justify-center gap-4 mt-3">
-                <p className="text-black/70">
+                <p className="text-black/70 lg:max-w-xl">
                   A calming and luxurious brand identity for a modern spa
                   experience.
                 </p>
-                <div className="p-1.5 bg-primary rounded-full mr-2">
+                <div className="p-1.5 bg-primary rounded-full mr-2 hover:opacity-50 transition-opacity">
+                  <ArrowUpRight
+                    size={32}
+                    strokeWidth={2}
+                    className="text-white"
+                  />
+                </div>
+              </div>
+            </div>
+          </Card>
+          <Card className="flex flex-rows bg-white border border-white hover:bg-card hover:border hover:border-black/20 transition-all duration-300 items-center justify-center rounded-2xl p-5">
+            <div>
+              <Image
+                src={ImageZenya}
+                alt="alt"
+                className="w-[350px] h-[289px] lg:w-[539px] rounded-2xl object-cover"
+              />
+            </div>
+            <div className="ml-2.5">
+              <div>
+                <h3 className="text-xl font-medium">Zenya - Wellness Spa</h3>
+                <Badge className="text-sm bg-white text-black/70 font-normal px-3 py-1.5 mt-2">
+                  Graphic Design
+                </Badge>
+              </div>
+              <div className="flex items-center justify-center gap-4 mt-3">
+                <p className="text-black/70 lg:max-w-xl">
+                  A calming and luxurious brand identity for a modern spa
+                  experience.
+                </p>
+                <div className="p-1.5 bg-primary rounded-full mr-2 hover:opacity-50 transition-opacity">
+                  <ArrowUpRight
+                    size={32}
+                    strokeWidth={2}
+                    className="text-white"
+                  />
+                </div>
+              </div>
+            </div>
+          </Card>
+          <Card className="flex flex-rows bg-white border border-white hover:bg-card hover:border hover:border-black/20 transition-all duration-300 items-center justify-center rounded-2xl p-5">
+            <div>
+              <Image
+                src={ImageZenya}
+                alt="alt"
+                className="w-[350px] h-[289px] lg:w-[539px] rounded-2xl object-cover"
+              />
+            </div>
+            <div className="ml-2.5">
+              <div>
+                <h3 className="text-xl font-medium">Zenya - Wellness Spa</h3>
+                <Badge className="text-sm bg-white text-black/70 font-normal px-3 py-1.5 mt-2">
+                  Graphic Design
+                </Badge>
+              </div>
+              <div className="flex items-center justify-center gap-4 mt-3">
+                <p className="text-black/70 lg:max-w-xl">
+                  A calming and luxurious brand identity for a modern spa
+                  experience.
+                </p>
+                <div className="p-1.5 bg-primary rounded-full mr-2 hover:opacity-50 transition-opacity">
                   <ArrowUpRight
                     size={32}
                     strokeWidth={2}
@@ -63,6 +138,9 @@ export default function Projects() {
             </div>
           </Card>
         </div>
+        <Button className="px-6 py-5 text-md mt-10 text-black font-medium border bg-white hover:bg-white hover:opacity-50 transition-opacity">
+          View my work <ArrowRight className="ml-1" />
+        </Button>
       </div>
     </section>
   );
