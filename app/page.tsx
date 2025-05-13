@@ -5,6 +5,7 @@ import LogoSection from "./main/LogoSection";
 import Services from "./main/Services";
 import Projects from "./main/Projects";
 import Process from "./main/Process";
+import Tools from "./main/Tools";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Services />
       <Projects />
       <Process />
+      <Tools />
     </>
   );
 }
