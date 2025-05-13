@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 export default function Projects() {
   return (
     <section className="py-20">
-      <div className="flex flex-col items-center justify-center smx-auto">
+      <div className="flex flex-col items-center justify-center mx-auto">
         <div className="text-center text-white text-md font-medium bg-primary rounded-md px-2.5 py-2 mx-auto w-fit">
           Projects
         </div>
@@ -16,8 +16,8 @@ export default function Projects() {
           A showcase of real-world projects where design meets code and vision
           becomes experience.
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-2.5 mt-12 md:max-w-2xl lg:max-w-5xl mx-auto">
-          <Card className="flex flex-rows bg-white border border-white hover:bg-card hover:border hover:border-black/20 transition-all duration-300 items-center justify-center rounded-2xl p-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-2.5 mt-12 max-w-sm md:max-w-2xl lg:max-w-5xl mx-auto">
+          <Card className="flex flex-rows  bg-card border border-black/20 lg:border-white hover:border-black/20 transition-all duration-300 items-center justify-center rounded-2xl p-5">
             <div>
               <Image
                 src={ImageZenya}
@@ -47,7 +47,7 @@ export default function Projects() {
               </div>
             </div>
           </Card>
-          <Card className="flex flex-rows bg-white border border-white hover:bg-card hover:border hover:border-black/20 transition-all duration-300 items-center justify-center rounded-2xl p-5">
+          <Card className="flex flex-rows  bg-card border border-black/20 lg:border-white hover:border-black/20 transition-all duration-300 items-center justify-center rounded-2xl p-5">
             <div>
               <Image
                 src={ImageZenya}
@@ -77,7 +77,7 @@ export default function Projects() {
               </div>
             </div>
           </Card>
-          <Card className="flex flex-rows bg-white border border-white hover:bg-card hover:border hover:border-black/20 transition-all duration-300 items-center justify-center rounded-2xl p-5">
+          <Card className="flex flex-rows  bg-card border border-black/20 lg:border-white hover:border-black/20 transition-all duration-300 items-center justify-center rounded-2xl p-5">
             <div>
               <Image
                 src={ImageZenya}
@@ -107,7 +107,7 @@ export default function Projects() {
               </div>
             </div>
           </Card>
-          <Card className="flex flex-rows bg-white border border-white hover:bg-card hover:border hover:border-black/20 transition-all duration-300 items-center justify-center rounded-2xl p-5">
+          <Card className="flex flex-rows  bg-card border border-black/20 lg:border-white hover:border-black/20 transition-all duration-300 items-center justify-center rounded-2xl p-5">
             <div>
               <Image
                 src={ImageZenya}

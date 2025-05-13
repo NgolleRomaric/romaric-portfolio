@@ -1,9 +1,10 @@
 //import Image from "next/image";
-import NavBar from "@/app/main/NavBar";
+import NavBar from "./main/NavBar";
 import Hero from "./main/Hero";
 import LogoSection from "./main/LogoSection";
 import Services from "./main/Services";
 import Projects from "./main/Projects";
+import Process from "./main/Process";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <LogoSection />
       <Services />
       <Projects />
+      <Process />
     </>
   );
 }
