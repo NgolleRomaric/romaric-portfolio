@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 
 export default function NavBar() {
   return (
-    <section className="mt-11 lg:mt-6 sticky top-5 z-50">
+    <section className="mt-8 lg:mt-6 sticky top-5 z-50">
       <div className="flex items-center justify-between p-2.5 border border-black/20 rounded-full max-w-xs md:max-w-xl lg:max-w-5xl mx-auto backdrop-blur bg-white/30">
         <Image
           src={LogoRomaric}
