@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 
 export default function Projects() {
   return (
-    <section className="py-20 px-8">
+    <section className="py-20 px-2">
       <div className="flex flex-col items-center justify-center mx-auto">
         <div className="text-center text-white text-md font-medium bg-primary rounded-md px-2.5 py-2 mx-auto w-fit">
           Projects
@@ -18,7 +18,7 @@ export default function Projects() {
           becomes experience.
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-2.5 mt-12 max-w-sm md:max-w-2xl lg:max-w-5xl mx-auto">
-          <Card className="flex flex-rows  bg-card border border-black/20 lg:border-white hover:border-black/20 transition-all duration-300 items-center justify-center rounded-2xl p-5">
+          <Card className="flex flex-rows  bg-card border border-black/20 lg:border-white hover:border-black/20 transition-all duration-300 items-center justify-center rounded-2xl p-3">
             <div>
               <Image
                 src={ImageZenya}
@@ -33,7 +33,7 @@ export default function Projects() {
                   Graphic Design
                 </Badge>
               </div>
-              <div className="flex items-center justify-center gap-4 mt-3">
+              <div className="flex items-center justify-center gap-4 mt-3 mb-3">
                 <p className="text-black/70 lg:max-w-xl">
                   A calming and luxurious brand identity for a modern spa
                   experience.
@@ -48,7 +48,7 @@ export default function Projects() {
               </div>
             </div>
           </Card>
-          <Card className="flex flex-rows  bg-card border border-black/20 lg:border-white hover:border-black/20 transition-all duration-300 items-center justify-center rounded-2xl p-5">
+          <Card className="flex flex-rows  bg-card border border-black/20 lg:border-white hover:border-black/20 transition-all duration-300 items-center justify-center rounded-2xl p-3">
             <div>
               <Image
                 src={FictifProject}
@@ -63,7 +63,7 @@ export default function Projects() {
                   Graphic Design
                 </Badge>
               </div>
-              <div className="flex items-center justify-center gap-4 mt-3">
+              <div className="flex items-center justify-center gap-4 mt-3 mb-3">
                 <p className="text-black/70 lg:max-w-xl">
                   A calming and luxurious brand identity for a modern spa
                   experience.
@@ -78,7 +78,7 @@ export default function Projects() {
               </div>
             </div>
           </Card>
-          <Card className="flex flex-rows  bg-card border border-black/20 lg:border-white hover:border-black/20 transition-all duration-300 items-center justify-center rounded-2xl p-5">
+          <Card className="flex flex-rows  bg-card border border-black/20 lg:border-white hover:border-black/20 transition-all duration-300 items-center justify-center rounded-2xl p-3">
             <div>
               <Image
                 src={ImageZenya}
@@ -93,7 +93,7 @@ export default function Projects() {
                   Graphic Design
                 </Badge>
               </div>
-              <div className="flex items-center justify-center gap-4 mt-3">
+              <div className="flex items-center justify-center gap-4 mt-3 mb-3">
                 <p className="text-black/70 lg:max-w-xl">
                   A calming and luxurious brand identity for a modern spa
                   experience.
@@ -108,7 +108,7 @@ export default function Projects() {
               </div>
             </div>
           </Card>
-          <Card className="flex flex-rows  bg-card border border-black/20 lg:border-white hover:border-black/20 transition-all duration-300 items-center justify-center rounded-2xl p-5">
+          <Card className="flex flex-rows  bg-card border border-black/20 lg:border-white hover:border-black/20 transition-all duration-300 items-center justify-center rounded-2xl p-3">
             <div>
               <Image
                 src={ImageZenya}
@@ -123,7 +123,7 @@ export default function Projects() {
                   Graphic Design
                 </Badge>
               </div>
-              <div className="flex items-center justify-center gap-4 mt-3">
+              <div className="flex items-center justify-center gap-4 mt-3 mb-3">
                 <p className="text-black/70 lg:max-w-xl">
                   A calming and luxurious brand identity for a modern spa
                   experience.

@@ -13,7 +13,7 @@ import {
 
 export default function Process() {
   return (
-    <section className="py-20 px-8">
+    <section className="py-20 px-2">
       <div className="flex flex-col items-center justify-center mx-auto">
         <div className="text-center text-white text-md font-medium bg-primary rounded-md px-2.5 py-2 mx-auto w-fit">
           Process
