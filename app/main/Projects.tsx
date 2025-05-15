@@ -1,13 +1,14 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import ImageZenya from "@/public/zenya.jpg";
+import FictifProject from "@/public/fictif project.jpg";
 import { ArrowUpRight, ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 
 export default function Projects() {
   return (
-    <section className="py-20">
+    <section className="py-20 px-8">
       <div className="flex flex-col items-center justify-center mx-auto">
         <div className="text-center text-white text-md font-medium bg-primary rounded-md px-2.5 py-2 mx-auto w-fit">
           Projects
@@ -50,7 +51,7 @@ export default function Projects() {
           <Card className="flex flex-rows  bg-card border border-black/20 lg:border-white hover:border-black/20 transition-all duration-300 items-center justify-center rounded-2xl p-5">
             <div>
               <Image
-                src={ImageZenya}
+                src={FictifProject}
                 alt="alt"
                 className="w-[350px] h-[289px] lg:w-[539px] rounded-2xl object-cover"
               />

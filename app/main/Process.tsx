@@ -13,7 +13,7 @@ import {
 
 export default function Process() {
   return (
-    <section className="py-20">
+    <section className="py-20 px-8">
       <div className="flex flex-col items-center justify-center mx-auto">
         <div className="text-center text-white text-md font-medium bg-primary rounded-md px-2.5 py-2 mx-auto w-fit">
           Process
@@ -63,7 +63,9 @@ export default function Process() {
             <div className="p-4 bg-primary rounded-full">
               <FileCheck2 size={24} strokeWidth={1.5} />
             </div>
-            <h4 className="text-xm font-medium">Revisions & Approval</h4>
+            <h4 className="text-xm font-medium text-center">
+              Revisions & Approval
+            </h4>
             <p className="text-black/70 text-center text-sm">
               You review and I will adjust accordingly.
             </p>

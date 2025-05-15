@@ -40,7 +40,7 @@ const logos4 = [
 
 export default function Tools() {
   return (
-    <section className="py-20">
+    <section className="py-20 px-8">
       <div className="flex flex-col items-center justify-center mx-auto">
         <div className="text-center text-white text-md font-medium bg-primary rounded-md px-2.5 py-2 mx-auto w-fit">
           Tools I Use

@@ -6,6 +6,7 @@ import Services from "./main/Services";
 import Projects from "./main/Projects";
 import Process from "./main/Process";
 import Tools from "./main/Tools";
+import Offers from "./main/Offers";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Projects />
       <Process />
       <Tools />
+      <Offers />
     </>
   );
 }

@@ -16,7 +16,7 @@ const logos = [
 
 export default function Services() {
   return (
-    <section className="py-20">
+    <section className="py-20 px-8">
       <div className="container mx-auto">
         <div className="text-center text-white text-md font-medium bg-primary rounded-md px-2.5 py-2 mx-auto w-fit">
           Services
