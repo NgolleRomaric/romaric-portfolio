@@ -8,6 +8,8 @@ import Process from "./main/Process";
 import Tools from "./main/Tools";
 import Offers from "./main/Offers";
 import Testimonials from "./main/Testimonials";
+import CallToAction from "./main/CallToAction";
+import Footer from "./main/Footer";
 
 export default function Home() {
   return (
@@ -21,6 +23,8 @@ export default function Home() {
       <Tools />
       <Offers />
       <Testimonials />
+      <CallToAction />
+      <Footer />
     </>
   );
 }
