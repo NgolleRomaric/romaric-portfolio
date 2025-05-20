@@ -26,7 +26,7 @@ export default function NavBar() {
             </li>
             <li>
               <Link
-                href="/services"
+                href="#services"
                 className="text-black hover:text-black/50 transition-colors"
               >
                 Services
@@ -34,7 +34,7 @@ export default function NavBar() {
             </li>
             <li>
               <Link
-                href="/projects"
+                href="/projet"
                 className="text-black hover:text-black/50 transition-colors"
               >
                 Projects
@@ -42,7 +42,7 @@ export default function NavBar() {
             </li>
             <li>
               <Link
-                href="/offers"
+                href="#offers"
                 className="text-black hover:text-black/50 transition-colors"
               >
                 Offers
