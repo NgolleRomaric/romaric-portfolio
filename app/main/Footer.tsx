@@ -18,14 +18,14 @@ export default function Footer() {
     <footer className="bg-primary py-8 px-4 mt-12">
       <div className="container mx-auto max-w-sm md:max-w-xl lg:max-w-5xl items-center mt-8">
         <div className="flex flex-col lg:flex-row items-center justify-center gap-6 lg:justify-between">
-          <div>
+          <Link href="/">
             <Image
               src={LogoRomaric}
               alt="Logo Romaric"
               width={50}
               height={50}
             />
-          </div>
+          </Link>
           <nav className="">
             <ul className="flex flex-col items-center space-y-2 lg:flex-row lg:items-center lg:space-y-0 lg:space-x-6 text-md">
               <li>

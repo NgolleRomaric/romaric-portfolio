@@ -9,11 +9,13 @@ export default function NavBar() {
   return (
     <section className="mt-6 lg:mt-6 sticky top-5 z-50 px-2">
       <div className="flex items-center justify-between p-2.5 border border-black/20 rounded-full max-w-sm md:max-w-xl lg:max-w-5xl mx-auto backdrop-blur bg-white/30">
-        <Image
-          src={LogoRomaric}
-          alt="Logo Romaric"
-          className="h-[#50px] w-[#50px]"
-        />
+        <Link href="/">
+          <Image
+            src={LogoRomaric}
+            alt="Logo Romaric"
+            className="h-[#50px] w-[#50px]"
+          />
+        </Link>
         <nav className="flex justify-center hidden lg:block">
           <ul className="flex space-x-6 text-xm">
             <li>
