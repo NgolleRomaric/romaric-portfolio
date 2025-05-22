@@ -38,7 +38,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/services"
+                  href="#services"
                   className="text-white hover:text-black/50 transition-colors"
                 >
                   Services
@@ -54,7 +54,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/offers"
+                  href="#offers"
                   className="text-white hover:text-black/50 transition-colors"
                 >
                   Offers
