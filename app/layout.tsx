@@ -2,6 +2,7 @@
 import type { Metadata } from "next";
 import { Space_Grotesk } from "next/font/google";
 import { SmoothCursor } from "@/components/ui/smooth-cursor";
+import { ReactLenis } from "lenis/react";
 import "./globals.css";
 
 const spaceGrotesk = Space_Grotesk({
@@ -33,6 +34,7 @@ export default function RootLayout({
           */}
         {children}
         {/* </ThemeProvider> */}
+        <ReactLenis root />
         <SmoothCursor />
       </body>
     </html>
