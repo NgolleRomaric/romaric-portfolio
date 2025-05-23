@@ -21,7 +21,7 @@ export default function NavBar() {
   ];
 
   return (
-    <section className="mt-6 lg:mt-6 fixed w-full top-5 z-50 px-2">
+    <section className="lg:mt-6 fixed w-full top-5 z-50 px-2">
       <div className="p-2.5 border border-black/20 rounded-[35px]  max-w-sm md:max-w-xl lg:max-w-5xl mx-auto backdrop-blur bg-white/30">
         <div className="flex items-center justify-between">
           <Link href="/">

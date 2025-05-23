@@ -8,7 +8,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="mt-34 px-2">
+    <section className="mt-30 lg:mt-34 px-2">
       <div className="flex flex-col items-center justify-center py-10 space-y-8 bg-secondary max-w-sm md:max-w-xl lg:max-w-5xl rounded-xl mx-auto">
         <Badge className="text-sm text-black/70 bg-white px-6 py-2 rounded-md  mx-auto">
           Available to discuss your project

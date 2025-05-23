@@ -6,7 +6,7 @@ import IconCall from "@/public/call icon.svg";
 
 export default function Hero() {
   return (
-    <section className="mt-34 px-2">
+    <section className="mt-30 lg:mt-34 px-2">
       <div className="grid grid-col-1 lg:grid-cols-2 items-center justify-between gap-10 lg:gap-16 max-w-sm md:max-w-xl lg:max-w-5xl mx-auto">
         <div className="col-span-1">
           <Image
