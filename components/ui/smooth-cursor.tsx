@@ -91,6 +91,7 @@ export function SmoothCursor({
 }: SmoothCursorProps) {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [isMoving, setIsMoving] = useState(false);
+  const [isLargeScreen, setIsLargeScreen] = useState(false);
   const lastMousePos = useRef<Position>({ x: 0, y: 0 });
   const velocity = useRef<Position>({ x: 0, y: 0 });
   const lastUpdateTime = useRef(Date.now());
@@ -111,6 +112,22 @@ export function SmoothCursor({
   });
 
   useEffect(() => {
+    const checkScreenSize = () => {
+      setIsLargeScreen(window.innerWidth >= 1024); // 1024px est la taille lg dans Tailwind
+    };
+
+    checkScreenSize();
+    window.addEventListener("resize", checkScreenSize);
+
+    return () => window.removeEventListener("resize", checkScreenSize);
+  }, []);
+
+  useEffect(() => {
+    if (!isLargeScreen) {
+      document.body.style.cursor = "auto";
+      return;
+    }
+
     const updateVelocity = (currentPos: Position) => {
       const currentTime = Date.now();
       const deltaTime = currentTime - lastUpdateTime.current;
@@ -179,7 +196,9 @@ export function SmoothCursor({
       document.body.style.cursor = "auto";
       if (rafId) cancelAnimationFrame(rafId);
     };
-  }, [cursorX, cursorY, rotation, scale]);
+  }, [cursorX, cursorY, rotation, scale, isLargeScreen]);
+
+  if (!isLargeScreen) return null;
 
   return (
     <motion.div
