@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { CircleCheck } from "lucide-react";
 import IconCall from "@/public/call icon.svg";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Offers() {
   return (
@@ -73,12 +74,19 @@ export default function Offers() {
                 </div>
               </div>
             </div>
-            <Button className="px-6 py-5 text-md text-white font-medium mt-16 mx-6 bg-gradient-to-r from-black from-[65%] to-[#666666] to-[100%] border-0 hover:opacity-80 transition-opacity">
-              Request a quote
-              <span>
-                <Image src={IconCall} alt="IconCall" />
-              </span>
-            </Button>
+            <Link
+              href="https://cal.com/romaric-ngolle-edqtc3/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mx-auto"
+            >
+              <Button className="px-6 py-5 text-md text-white font-medium mt-16 mx-6 bg-gradient-to-r from-black from-[65%] to-[#666666] to-[100%] border-0 hover:opacity-80 transition-opacity">
+                Request a quote
+                <span>
+                  <Image src={IconCall} alt="IconCall" />
+                </span>
+              </Button>
+            </Link>
           </div>
           <div className="flex flex-col bg-card border border-black/20 rounded-2xl py-5 w-[270px] mx-auto">
             <div className="border-b border-black/20 pb-2 ">
@@ -140,12 +148,19 @@ export default function Offers() {
                 </div>
               </div>
             </div>
-            <Button className="px-6 py-5 text-md text-white font-medium mt-11 mx-6 bg-gradient-to-r from-black from-[65%] to-[#666666] to-[100%] border-0 hover:opacity-80 transition-opacity">
-              Request a quote
-              <span>
-                <Image src={IconCall} alt="IconCall" />
-              </span>
-            </Button>
+            <Link
+              href="https://cal.com/romaric-ngolle-edqtc3/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mx-auto"
+            >
+              <Button className="px-6 py-5 text-md text-white font-medium mt-11 mx-6 bg-gradient-to-r from-black from-[65%] to-[#666666] to-[100%] border-0 hover:opacity-80 transition-opacity">
+                Request a quote
+                <span>
+                  <Image src={IconCall} alt="IconCall" />
+                </span>
+              </Button>
+            </Link>
           </div>
           <div className="flex flex-col bg-card border border-black/20 rounded-2xl py-5 w-[270px] mx-auto">
             <div className="border-b border-black/20 pb-2 ">
@@ -205,12 +220,19 @@ export default function Offers() {
                 </div>
               </div>
             </div>
-            <Button className="px-6 py-5 text-md text-white font-medium mt-16 mx-6 bg-gradient-to-r from-black from-[65%] to-[#666666] to-[100%] border-0 hover:opacity-80 transition-opacity">
-              Request a quote
-              <span>
-                <Image src={IconCall} alt="IconCall" />
-              </span>
-            </Button>
+            <Link
+              href="https://cal.com/romaric-ngolle-edqtc3/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mx-auto"
+            >
+              <Button className="px-6 py-5 text-md text-white font-medium mt-16 mx-6 bg-gradient-to-r from-black from-[65%] to-[#666666] to-[100%] border-0 hover:opacity-80 transition-opacity">
+                Request a quote
+                <span>
+                  <Image src={IconCall} alt="IconCall" />
+                </span>
+              </Button>
+            </Link>
           </div>
           <div className="flex flex-col bg-primary border border-black/20 rounded-2xl py-5 w-[270px] mx-auto">
             <div className="border-b border-black/20 pb-2 ">
@@ -268,12 +290,19 @@ export default function Offers() {
                 </div>
               </div>
             </div>
-            <Button className="px-6 py-5 text-md text-white font-medium mt-11 mx-6 bg-gradient-to-r from-black from-[65%] to-[#666666] to-[100%] border-0 hover:opacity-80 transition-opacity">
-              Request a quote
-              <span>
-                <Image src={IconCall} alt="IconCall" />
-              </span>
-            </Button>
+            <Link
+              href="https://cal.com/romaric-ngolle-edqtc3/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mx-auto"
+            >
+              <Button className="px-6 py-5 text-md text-white font-medium mt-11 mx-6 bg-gradient-to-r from-black from-[65%] to-[#666666] to-[100%] border-0 hover:opacity-80 transition-opacity">
+                Request a quote
+                <span>
+                  <Image src={IconCall} alt="IconCall" />
+                </span>
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

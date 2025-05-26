@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import Playlist from "@/public/Music Image.png";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Music() {
   return (
@@ -18,9 +19,15 @@ export default function Music() {
               focus, stay in the flow, and sometimes even spark unexpected
               inspiration. Every design has its soundtrack.
             </p>
-            <Button className="px-6 py-5 text-md mt-4 text-black font-medium bg-primary hover:opacity-50 transition-opacity">
-              Listen to my playlist <ArrowRight className="ml-1" />
-            </Button>
+            <Link
+              href="https://open.spotify.com/playlist/37i9dQZF1EIdNTvkcjcOzJ?si=590386082ef0449a"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button className="px-6 py-5 text-md mt-4 text-black font-medium bg-primary hover:opacity-50 transition-opacity">
+                Listen to my playlist <ArrowRight className="ml-1" />
+              </Button>
+            </Link>
           </div>
           <div className="col-span-1">
             <Image src={Playlist} alt="Playlist" className="w-150 h-auto" />

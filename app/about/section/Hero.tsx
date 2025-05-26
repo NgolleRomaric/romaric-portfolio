@@ -2,6 +2,7 @@ import Image from "next/image";
 import Roro from "@/public/roro.jpg";
 import { Button } from "@/components/ui/button";
 import { FileDown } from "lucide-react";
+import Link from "next/link";
 import { BookCallButton } from "@/components/ui/book-call-button";
 
 export default function Hero() {
@@ -33,9 +34,11 @@ export default function Hero() {
           </p>
           <div className="flex flex-col lg:flex-row  items-center justify-center gap-4 lg:gap-12 mt-8">
             <BookCallButton />
-            <Button className="px-6 py-5 text-md text-black font-medium border bg-white hover:bg-white hover:opacity-50 transition-opacity">
-              Download CV <FileDown className="ml-1" />
-            </Button>
+            <Link href="/CV-Romaric-Ngolle.pdf" download>
+              <Button className="px-6 py-5 text-md text-black font-medium border bg-white hover:bg-white hover:opacity-50 transition-opacity">
+                Download CV <FileDown className="ml-1" />
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

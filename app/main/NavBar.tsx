@@ -78,6 +78,7 @@ export default function NavBar() {
           </nav>
 
           {/* Realy Navigation desktop */}
+
           <div className="flex items-center justify-between gap-5">
             <div className="hidden lg:inline-block">
               <BookCallButton />
@@ -89,14 +90,18 @@ export default function NavBar() {
 
           {/* Bouton menu mobile avec animation */}
           <motion.button
-            className="mr-1 lg:hidden"
+            className="relative flex items-center justify-center mr-1 lg:hidden w-8 h-8"
             onClick={() => setIsOpen(!isOpen)}
-            animate={{ rotate: isOpen ? 180 : 0 }}
-            transition={{ duration: 0.3 }}
+            animate={{ rotate: isOpen ? 90 : 0 }}
+            transition={{ duration: 0.2, ease: "easeInOut" }}
           >
             <motion.div
-              animate={{ opacity: isOpen ? 0 : 1 }}
-              transition={{ duration: 0.2 }}
+              className="absolute"
+              animate={{
+                opacity: isOpen ? 0 : 1,
+                scale: isOpen ? 0.5 : 1,
+              }}
+              transition={{ duration: 0.15 }}
             >
               <AlignRight
                 size={32}
@@ -105,9 +110,12 @@ export default function NavBar() {
               />
             </motion.div>
             <motion.div
-              className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-              animate={{ opacity: isOpen ? 1 : 0 }}
-              transition={{ duration: 0.2 }}
+              className="absolute"
+              animate={{
+                opacity: isOpen ? 1 : 0,
+                scale: isOpen ? 1 : 0.5,
+              }}
+              transition={{ duration: 0.15 }}
             >
               <X size={32} strokeWidth={1.5} className="text-black/30" />
             </motion.div>
@@ -121,7 +129,7 @@ export default function NavBar() {
               exit={{ height: 0 }}
               className="overflow-hidden"
             >
-              <div className="flex flex-col items-center gap-4 py-4 mt-6">
+              <div className="flex flex-col items-center gap-6 py-4 mt-6">
                 {navLinks.map((link) => (
                   <a href={link.href} key={link.label} className="">
                     {link.label}

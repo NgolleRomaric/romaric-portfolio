@@ -11,9 +11,12 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Romaric Portfolio",
+  title: "Romaric Ngolle",
   description:
     "Portfolio personnel de Romaric présentant ses projets et compétences",
+  icons: {
+    icon: "/logo 1.svg",
+  },
 };
 
 export default function RootLayout({

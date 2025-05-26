@@ -2,15 +2,15 @@ import Image from "next/image";
 import LogoRomaric from "@/public/logo 2.svg";
 import Linkedin from "@/public/linkedin.svg";
 import Behance from "@/public/behance.svg";
-import Dribble from "@/public/dribble.svg";
-import X from "@/public/x.svg";
+//import Dribble from "@/public/dribble.svg";
+//import X from "@/public/x.svg";
 import Link from "next/link";
 
 const logos = [
   { name: "Linkedin", image: Linkedin },
   { name: "Behance", image: Behance },
-  { name: "Dribble", image: Dribble },
-  { name: "X", image: X },
+  //{ name: "Dribble", image: Dribble },
+  //{ name: "X", image: X },
 ];
 
 export default function Footer() {
