@@ -132,7 +132,7 @@ export default function Testimonials() {
                           className="w-12 h-12 rounded-full object-cover"
                         />
                       ) : (
-                        <div className="w-10 h-10 rounded-full bg-primary" />
+                        <div className="w-12 h-12 rounded-full bg-primary" />
                       )}
                       <div>
                         <h4 className="text-lg font-semibold">
