@@ -38,7 +38,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="#services"
+                  href="/#services" // Modification ici
                   className="text-white hover:text-black/50 transition-colors"
                 >
                   Services
@@ -46,7 +46,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/projects"
+                  href="/projet" // Correction du lien pour correspondre à la navbar
                   className="text-white hover:text-black/50 transition-colors"
                 >
                   Projects
@@ -54,7 +54,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="#offers"
+                  href="/#offers" // Modification ici
                   className="text-white hover:text-black/50 transition-colors"
                 >
                   Offers

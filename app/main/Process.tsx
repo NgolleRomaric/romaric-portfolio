@@ -1,7 +1,5 @@
-import { Button } from "@/components/ui/button";
+import { BookCallButton } from "@/components/ui/book-call-button";
 import { Card } from "@/components/ui/card";
-import Image from "next/image";
-import IconCall from "@/public/call icon.svg";
 import {
   Phone,
   StickyNote,
@@ -22,7 +20,7 @@ export default function Process() {
           A clear and simple process, built to turn your ideas into real,
           functional design solutions.
         </h2>
-        <div className="grid grid-cols-2 mt-12 md:grid-cols-3 gap-2.5  md:max-w-2xl lg:max-w-5xl mx-auto">
+        <div className="grid grid-cols-2 mt-12 mb-8 md:grid-cols-3 gap-2.5  md:max-w-2xl lg:max-w-5xl mx-auto">
           <Card className="flex flex-col items-center border-none gap-4 justify-between rounded-2xl p-5 max-w-[180px]">
             <div className="p-4 bg-primary rounded-full">
               <Phone size={24} strokeWidth={1.5} />
@@ -80,12 +78,7 @@ export default function Process() {
             </p>
           </Card>
         </div>
-        <Button className="px-6 py-5 text-md text-white font-medium mt-8 bg-gradient-to-r from-black from-[65%] to-[#666666] to-[100%] border-0 hover:opacity-80 transition-opacity">
-          Book a call
-          <span>
-            <Image src={IconCall} alt="IconCall" />
-          </span>
-        </Button>
+        <BookCallButton />
       </div>
     </section>
   );

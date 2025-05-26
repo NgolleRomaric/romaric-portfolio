@@ -1,3 +1,5 @@
+"use client";
+
 import Meyie from "@/public/img clients/Jores Monthe.jpg";
 import Hillary from "@/public/img clients/Hillaz Joyce.jpeg";
 import Duplex from "@/public/img clients/DUPLEX POUNDE.jpeg";
@@ -6,6 +8,8 @@ import Parish from "@/public/img clients/DARRYL NOUBISSI.jpeg";
 import Priscille from "@/public/img clients/Priscille Kamdom.jpeg";
 import Sasha from "@/public/img clients/Leanne sasha Fokam.jpeg";
 import Wilfried from "@/public/img clients/Wilfried Prombo.jpg";
+import { motion } from "motion/react";
+import { Fragment } from "react";
 import Image from "next/image";
 
 // Type pour les témoignages
@@ -101,38 +105,52 @@ export default function Testimonials() {
         </h2>
       </div>
       <div className="container mt-12">
-        <div className="overflow-hidden mt-20 [mask-image:linear-gradient(to_right,transparent,white_10%,white_90%,transparent)]">
-          <div className="flex gap-6 px-8 sm:px-8 w-xs">
-            {testimonials.map((testimonial, index) => (
-              <div
-                key={index}
-                className="max-w-[300px] lg:max-w-[540px] bg-card rounded-2xl px-12 py-8 flex-shrink-0"
-              >
-                <div className="flex items-center gap-4 mb-2">
-                  {testimonial.photo ? (
-                    <Image
-                      src={testimonial.photo}
-                      alt={testimonial.name}
-                      width={60}
-                      height={60}
-                      className="w-12 h-12 rounded-full object-cover"
-                    />
-                  ) : (
-                    <div className="w-10 h-10 rounded-full bg-primary" />
-                  )}
-                  <div>
-                    <h4 className="text-lg font-semibold">
-                      {testimonial.name}
-                    </h4>
-                    <p className="text-sm text-black/70">{testimonial.role}</p>
+        <div className="flex overflow-hidden mt-20 [mask-image:linear-gradient(to_right,transparent,white_10%,white_90%,transparent)]">
+          <motion.div
+            animate={{ x: "-50%" }}
+            transition={{
+              duration: 120,
+              ease: "linear",
+              repeat: Infinity,
+            }}
+            className="flex flex-none gap-6 pr-24"
+          >
+            {Array.from({ length: 2 }).map((_, i) => (
+              <Fragment key={i}>
+                {testimonials.map((testimonial, index) => (
+                  <div
+                    key={`${i}-${index}`}
+                    className="max-w-[300px] lg:max-w-[540px] bg-card rounded-2xl px-12 py-8 flex-shrink-0"
+                  >
+                    <div className="flex items-center gap-4 mb-2">
+                      {testimonial.photo ? (
+                        <Image
+                          src={testimonial.photo}
+                          alt={testimonial.name}
+                          width={60}
+                          height={60}
+                          className="w-12 h-12 rounded-full object-cover"
+                        />
+                      ) : (
+                        <div className="w-10 h-10 rounded-full bg-primary" />
+                      )}
+                      <div>
+                        <h4 className="text-lg font-semibold">
+                          {testimonial.name}
+                        </h4>
+                        <p className="text-sm text-black/70">
+                          {testimonial.role}
+                        </p>
+                      </div>
+                    </div>
+                    <p className="text-sm mt-4 leading-relaxed">
+                      &quot;{testimonial.message}&quot;
+                    </p>
                   </div>
-                </div>
-                <p className="text-sm mt-4 leading-relaxed">
-                  &quot;{testimonial.message}&quot;
-                </p>
-              </div>
+                ))}
+              </Fragment>
             ))}
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

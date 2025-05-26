@@ -2,21 +2,20 @@
 
 import Image from "next/image";
 import LogoRomaric from "@/public/logo 1.svg";
-import IconCall from "@/public/call icon.svg";
 import { Sun, AlignRight, X } from "lucide-react";
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
 import { motion, AnimatePresence } from "motion/react";
 import { useState } from "react";
+import { BookCallButton } from "@/components/ui/book-call-button";
 
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
     { label: "About", href: "/about" },
-    { label: "Services", href: "#services" },
+    { label: "Services", href: "/#services" }, // Ajout du / avant le #
     { label: "Projects", href: "/projet" },
-    { label: "Offers", href: "#offers" },
+    { label: "Offers", href: "/#offers" }, // Ajout du / avant le #
     { label: "Blog", href: "/blog" },
   ];
 
@@ -45,7 +44,7 @@ export default function NavBar() {
               </li>
               <li>
                 <Link
-                  href="#services"
+                  href="/#services" // Modification ici
                   className="text-black hover:text-black/50 transition-colors"
                 >
                   Services
@@ -61,7 +60,7 @@ export default function NavBar() {
               </li>
               <li>
                 <Link
-                  href="#offers"
+                  href="/#offers" // Modification ici
                   className="text-black hover:text-black/50 transition-colors"
                 >
                   Offers
@@ -81,12 +80,7 @@ export default function NavBar() {
           {/* Realy Navigation desktop */}
           <div className="flex items-center justify-between gap-5">
             <div className="hidden lg:inline-block">
-              <Button className="px-6 py-5 text-md text-white font-medium bg-gradient-to-r from-black from-[65%] to-[#666666] to-[100%] border-0 hover:opacity-80 transition-opacity">
-                Book a call{" "}
-                <span>
-                  <Image src={IconCall} alt="IconCall" />
-                </span>
-              </Button>
+              <BookCallButton />
             </div>
             <div className="flex items-center bg-secondary rounded-full p-2 cursor-pointer">
               <Sun size={32} strokeWidth={1.5} className="text-black/30" />
@@ -133,12 +127,7 @@ export default function NavBar() {
                     {link.label}
                   </a>
                 ))}
-                <Button className="px-6 py-5 mt-6 text-md text-white font-medium bg-gradient-to-r from-black from-[65%] to-[#666666] to-[100%] border-0 hover:opacity-80 transition-opacity">
-                  Book a call{" "}
-                  <span>
-                    <Image src={IconCall} alt="IconCall" />
-                  </span>
-                </Button>
+                <BookCallButton />
               </div>
             </motion.div>
           )}

@@ -1,3 +1,5 @@
+"use client";
+
 //import { Badge } from "@/components/ui/badge";
 import CHEvent from "@/public/logo/CH event.svg";
 import ReinasTouch from "@/public/logo/reina's touch.svg";
@@ -9,8 +11,10 @@ import OrniCrack from "@/public/logo/orni crack.svg";
 import PlantAgrico from "@/public/logo/plant agrico.svg";
 import SamShopping from "@/public/logo/Sam shoping.svg";
 import SmartVaccin from "@/public/logo/smart vaccin.svg";
+import { motion } from "motion/react";
 import Zenya from "@/public/logo/zenya.svg";
 import Image from "next/image";
+import React, { Fragment } from "react";
 
 const logos = [
   { name: "CH Event", image: CHEvent, with: 94, hight: 100 },
@@ -33,12 +37,24 @@ export default function LogoSection() {
         <div className="text-center text-black/70 text-md bg-tranparent border border-black/50 rounded-md px-2.5 py-2 mx-auto w-fit">
           They trust me
         </div>
-        <div className="overflow-hidden mt-20 [mask-image:linear-gradient(to_right,transparent,white_10%,white_90%,transparent)]">
-          <div className="flex gap-20 lg:gap-28 pr-24">
-            {logos.map((logo) => (
-              <Image src={logo.image} key={logo.name} alt={logo.name} />
+        <div className="flex overflow-hidden mt-20 [mask-image:linear-gradient(to_right,transparent,white_10%,white_90%,transparent)]">
+          <motion.div
+            animate={{ x: "-50%" }}
+            transition={{
+              duration: 30,
+              ease: "linear",
+              repeat: Infinity,
+            }}
+            className="flex flex-none gap-20 lg:gap-28 pr-24"
+          >
+            {Array.from({ length: 2 }).map((_, i) => (
+              <Fragment key={i}>
+                {logos.map((logo) => (
+                  <Image src={logo.image} key={logo.name} alt={logo.name} />
+                ))}
+              </Fragment>
             ))}
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

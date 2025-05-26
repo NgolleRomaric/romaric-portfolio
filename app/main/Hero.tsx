@@ -1,10 +1,11 @@
 import { Button } from "@/components/ui/button";
 import PP from "@/public/pp linkedin.jpg";
-import IconCall from "@/public/call icon.svg";
+//import IconCall from "@/public/call icon.svg";
 import { Badge } from "@/components/ui/badge";
 import { ArrowRight } from "lucide-react";
 //import { TextAnimate } from "@/components/magicui/text-animate";
 import Image from "next/image";
+import { BookCallButton } from "@/components/ui/book-call-button";
 
 export default function Hero() {
   return (
@@ -30,16 +31,11 @@ export default function Hero() {
             to life through code.
           </h2>
         </div>
-        <div className="flex flex-col lg:flex-row  items-center justify-center gap-4 lg:gap-12">
+        <div className="flex flex-col lg:flex-row items-center justify-center gap-4 lg:gap-12">
           <Button className="px-6 py-5 text-md text-black font-medium bg-white hover:bg-white hover:opacity-50 transition-opacity">
             View my work <ArrowRight className="ml-1" />
           </Button>
-          <Button className="px-6 py-5 text-md text-white font-medium bg-gradient-to-r from-black from-[65%] to-[#666666] to-[100%] border-0 hover:opacity-80 transition-opacity">
-            Book a call
-            <span>
-              <Image src={IconCall} alt="IconCall" />
-            </span>
-          </Button>
+          <BookCallButton />
         </div>
       </div>
     </section>

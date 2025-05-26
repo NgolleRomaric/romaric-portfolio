@@ -2,7 +2,7 @@ import Image from "next/image";
 import Roro from "@/public/roro.jpg";
 import { Button } from "@/components/ui/button";
 import { FileDown } from "lucide-react";
-import IconCall from "@/public/call icon.svg";
+import { BookCallButton } from "@/components/ui/book-call-button";
 
 export default function Hero() {
   return (
@@ -32,12 +32,7 @@ export default function Hero() {
             life from start to finish.
           </p>
           <div className="flex flex-col lg:flex-row  items-center justify-center gap-4 lg:gap-12 mt-8">
-            <Button className="px-6 py-5 text-md text-white font-medium bg-gradient-to-r from-black from-[65%] to-[#666666] to-[100%] border-0 hover:opacity-80 transition-opacity">
-              Book a call
-              <span>
-                <Image src={IconCall} alt="IconCall" />
-              </span>
-            </Button>
+            <BookCallButton />
             <Button className="px-6 py-5 text-md text-black font-medium border bg-white hover:bg-white hover:opacity-50 transition-opacity">
               Download CV <FileDown className="ml-1" />
             </Button>
