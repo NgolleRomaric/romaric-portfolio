@@ -30,11 +30,13 @@ const logos = [
   { name: "Zenya", image: Zenya, with: 217, hight: 60 },
 ];
 
+//revoir les logo Fictif Project et Orni crack
+
 export default function LogoSection() {
   return (
     <section className="py-20">
       <div className="">
-        <div className="text-center text-black/70 text-md bg-tranparent border border-black/50 rounded-md px-2.5 py-2 mx-auto w-fit">
+        <div className="text-center text-black/70 dark:text-white text-md bg-tranparent border border-black/50 dark:border-white/70 rounded-md px-2.5 py-2 mx-auto w-fit">
           They trust me
         </div>
         <div className="flex overflow-hidden mt-20 [mask-image:linear-gradient(to_right,transparent,white_10%,white_90%,transparent)]">
@@ -50,7 +52,12 @@ export default function LogoSection() {
             {Array.from({ length: 2 }).map((_, i) => (
               <Fragment key={i}>
                 {logos.map((logo) => (
-                  <Image src={logo.image} key={logo.name} alt={logo.name} />
+                  <Image
+                    src={logo.image}
+                    key={logo.name}
+                    alt={logo.name}
+                    className="dark:brightness-0 dark:invert"
+                  />
                 ))}
               </Fragment>
             ))}

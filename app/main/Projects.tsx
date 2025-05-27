@@ -18,7 +18,7 @@ export default function Projects() {
           becomes experience.
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-2.5 mt-12 max-w-sm md:max-w-2xl lg:max-w-5xl mx-auto">
-          <Card className="flex flex-rows  bg-card border border-black/20 lg:border-white hover:border-black/20 transition-all duration-300 items-center justify-center rounded-2xl p-3">
+          <Card className="flex flex-rows bg-card border-card lg:border-card lg:hover:border-border transition-all duration-300 items-center justify-center rounded-2xl p-3">
             <div>
               <Image
                 src={ImageZenya}
@@ -48,7 +48,7 @@ export default function Projects() {
               </div>
             </div>
           </Card>
-          <Card className="flex flex-rows  bg-card border border-black/20 lg:border-white hover:border-black/20 transition-all duration-300 items-center justify-center rounded-2xl p-3">
+          <Card className="flex flex-rows bg-card border-card lg:border-card lg:hover:border-border transition-all duration-300 items-center justify-center rounded-2xl p-3">
             <div>
               <Image
                 src={FictifProject}
@@ -78,7 +78,7 @@ export default function Projects() {
               </div>
             </div>
           </Card>
-          <Card className="flex flex-rows  bg-card border border-black/20 lg:border-white hover:border-black/20 transition-all duration-300 items-center justify-center rounded-2xl p-3">
+          <Card className="flex flex-rows bg-card border-card lg:border-card lg:hover:border-border transition-all duration-300 items-center justify-center rounded-2xl p-3">
             <div>
               <Image
                 src={ImageZenya}
@@ -108,7 +108,7 @@ export default function Projects() {
               </div>
             </div>
           </Card>
-          <Card className="flex flex-rows  bg-card border border-black/20 lg:border-white hover:border-black/20 transition-all duration-300 items-center justify-center rounded-2xl p-3">
+          <Card className="flex flex-rows bg-card border-card lg:border-card lg:hover:border-border transition-all duration-300 items-center justify-center rounded-2xl p-3">
             <div>
               <Image
                 src={ImageZenya}

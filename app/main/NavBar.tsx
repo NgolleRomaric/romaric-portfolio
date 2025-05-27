@@ -2,11 +2,12 @@
 
 import Image from "next/image";
 import LogoRomaric from "@/public/logo 1.svg";
-import { Sun, AlignRight, X } from "lucide-react";
+import { AlignRight, X } from "lucide-react";
 import Link from "next/link";
-import { motion, AnimatePresence } from "motion/react";
+import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import { BookCallButton } from "@/components/ui/book-call-button";
+import { ThemeToggle } from "@/components/ui/theme-toggle";
 
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,13 +22,14 @@ export default function NavBar() {
 
   return (
     <section className="lg:mt-6 fixed w-full top-5 z-50 px-2">
-      <div className="p-2.5 border border-black/20 rounded-[35px]  max-w-sm md:max-w-xl lg:max-w-5xl mx-auto backdrop-blur bg-white/30">
+      <div className="p-2.5 border border-black/20 dark:border-border rounded-[35px] max-w-sm md:max-w-xl lg:max-w-5xl mx-auto backdrop-blur bg-white/30 dark:bg-secondary/90">
         <div className="flex items-center justify-between">
-          <Link href="/">
+          {/* Logo */}
+          <Link href="/" className="w-[50px] h-[50px]">
             <Image
               src={LogoRomaric}
               alt="Logo Romaric"
-              className="h-[#50px] w-[#50px]"
+              className="w-full h-full"
             />
           </Link>
 
@@ -37,7 +39,7 @@ export default function NavBar() {
               <li>
                 <Link
                   href="/about"
-                  className="text-black hover:text-black/50 transition-colors"
+                  className="text-black dark:text-white hover:text-black/50 transition-colors"
                 >
                   About
                 </Link>
@@ -45,7 +47,7 @@ export default function NavBar() {
               <li>
                 <Link
                   href="/#services" // Modification ici
-                  className="text-black hover:text-black/50 transition-colors"
+                  className="text-black dark:text-white hover:text-black/50 transition-colors"
                 >
                   Services
                 </Link>
@@ -53,7 +55,7 @@ export default function NavBar() {
               <li>
                 <Link
                   href="/projet"
-                  className="text-black hover:text-black/50 transition-colors"
+                  className="text-black dark:text-white hover:text-black/50 transition-colors"
                 >
                   Projects
                 </Link>
@@ -61,7 +63,7 @@ export default function NavBar() {
               <li>
                 <Link
                   href="/#offers" // Modification ici
-                  className="text-black hover:text-black/50 transition-colors"
+                  className="text-black dark:text-white hover:text-black/50 transition-colors"
                 >
                   Offers
                 </Link>
@@ -69,7 +71,7 @@ export default function NavBar() {
               <li>
                 <Link
                   href="/blog"
-                  className="text-black hover:text-black/50 transition-colors"
+                  className="text-black dark:text-white hover:text-black/50 transition-colors"
                 >
                   Blog
                 </Link>
@@ -77,37 +79,27 @@ export default function NavBar() {
             </ul>
           </nav>
 
-          {/* Realy Navigation desktop */}
-
-          <div className="flex items-center justify-between gap-5">
-            <div className="hidden lg:inline-block">
-              <BookCallButton />
-            </div>
-            <div className="flex items-center bg-secondary rounded-full p-2 cursor-pointer">
-              <Sun size={32} strokeWidth={1.5} className="text-black/30" />
-            </div>
+          {/* Actions mobile et desktop */}
+          <div className="flex items-center lg:hidden">
+            <ThemeToggle />
           </div>
 
-          {/* Bouton menu mobile avec animation */}
+          {/* Bouton menu mobile */}
           <motion.button
-            className="relative flex items-center justify-center mr-1 lg:hidden w-8 h-8"
+            className="relative flex items-center justify-center lg:hidden w-8 h-8"
             onClick={() => setIsOpen(!isOpen)}
             animate={{ rotate: isOpen ? 90 : 0 }}
             transition={{ duration: 0.2, ease: "easeInOut" }}
           >
             <motion.div
-              className="absolute"
+              className="absolute dark:text-white"
               animate={{
                 opacity: isOpen ? 0 : 1,
                 scale: isOpen ? 0.5 : 1,
               }}
               transition={{ duration: 0.15 }}
             >
-              <AlignRight
-                size={32}
-                strokeWidth={1.5}
-                className="text-black/30"
-              />
+              <AlignRight />
             </motion.div>
             <motion.div
               className="absolute"
@@ -117,9 +109,19 @@ export default function NavBar() {
               }}
               transition={{ duration: 0.15 }}
             >
-              <X size={32} strokeWidth={1.5} className="text-black/30" />
+              <X
+                size={32}
+                strokeWidth={1.5}
+                className="text-black/30 dark:text-white"
+              />
             </motion.div>
           </motion.button>
+
+          {/* Actions desktop uniquement */}
+          <div className="hidden lg:flex items-center gap-5">
+            <BookCallButton />
+            <ThemeToggle />
+          </div>
         </div>
         <AnimatePresence>
           {isOpen && (

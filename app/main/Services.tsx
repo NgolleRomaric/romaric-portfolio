@@ -25,7 +25,7 @@ export default function Services() {
           From idea to interface, I help brands look sharp and work beautifully
         </h2>
         <div className="container md:hidden lg:hidden">
-          <Card className="rounded-2xl border border-gray-200 p-8 bg-card relative overflow-hidden max-w-sm mx-auto mt-12">
+          <Card className="rounded-2xl border-border p-8 bg-card relative overflow-hidden max-w-sm mx-auto mt-12 dark:border">
             <div>
               <h3 className="font-semibold text-2xl mb-2">Graphic Design</h3>
               <h4 className="text-gray-500 text-xm">
@@ -42,7 +42,7 @@ export default function Services() {
               />
             </div>
           </Card>
-          <Card className="rounded-2xl border border-gray-200 p-8 bg-card relative overflow-hidden max-w-sm mx-auto mt-2.5">
+          <Card className="rounded-2xl border-border p-8 bg-card relative overflow-hidden max-w-sm mx-auto mt-2.5 dark:border">
             <Image
               src={ImageUIUXDesign}
               alt="ipsum"
@@ -59,7 +59,7 @@ export default function Services() {
               </p>
             </div>
           </Card>
-          <Card className="rounded-2xl border border-gray-200 p-8 bg-card relative overflow-hidden max-w-sm mx-auto mt-2.5">
+          <Card className="rounded-2xl border-border p-8 bg-card relative overflow-hidden max-w-sm mx-auto mt-2.5 dark:border">
             <Image
               src={ImageFrontEnd}
               alt="ipsum"
@@ -76,7 +76,7 @@ export default function Services() {
               </p>
             </div>
           </Card>
-          <Card className="rounded-2xl border border-gray-200 p-8 bg-card relative overflow-hidden max-w-sm mx-auto mt-2.5">
+          <Card className="rounded-2xl border-border p-8 bg-card relative overflow-hidden max-w-sm mx-auto mt-2.5 dark:border">
             <div className="container">
               <h3 className="font-semibold text-2xl mb-2">Full Package</h3>
               <h4 className="text-gray-500 text-xm">
@@ -96,7 +96,7 @@ export default function Services() {
         </div>
         <div className="flex items-center justify-center mt-12 hidden lg:max-w-5xl md:max-w-2xl mx-auto md:block lg:block">
           <div className="grid grid-cols-3 grid-rows-4 gap-2.5">
-            <Card className="col-span-2 row-span-3 items-center justify-center rounded-2xl bg-card p-5 border-white hover:border hover:border-black/20 transition-all duration-300">
+            <Card className="col-span-2 row-span-3 items-center justify-center rounded-2xl bg-card p-5 border-card hover:border hover:border-border transition-all duration-300">
               <div className="container">
                 <div className="mb-5">
                   <h3 className="font-semibold text-xl ml-4">Graphic Design</h3>
@@ -115,7 +115,7 @@ export default function Services() {
                 />
               </div>
             </Card>
-            <Card className="col-span-1 row-span-2 items-center justify-center  rounded-2xl bg-card p-5 border-white hover:border hover:border-black/20 transition-all duration-300">
+            <Card className="col-span-1 row-span-2 items-center justify-center rounded-2xl bg-card p-5 border-card hover:border hover:border-border transition-all duration-300">
               <Image
                 src={ImageUIUXDesign}
                 alt="ipsum"
@@ -132,7 +132,7 @@ export default function Services() {
                 </p>
               </div>
             </Card>
-            <Card className="col-span-1 row-span-3 items-center justify-center rounded-2xl bg-card p-5 border-white hover:border hover:border-black/20 transition-all duration-300">
+            <Card className="col-span-1 row-span-3 items-center justify-center rounded-2xl bg-card p-5 border-card hover:border hover:border-border transition-all duration-300">
               <Image
                 src={ImageFrontEnd}
                 alt="ipsum"
@@ -149,7 +149,7 @@ export default function Services() {
                 </p>
               </div>
             </Card>
-            <Card className="col-span-2 row-span-2 items-center justify-center rounded-2xl bg-card p-5 border-white hover:border hover:border-black/20 transition-all duration-300">
+            <Card className="col-span-2 row-span-2 items-center justify-center rounded-2xl bg-card p-5 border-card hover:border hover:border-border transition-all duration-300">
               <div className="flex items-center justify-between lg:gap-12 md:gap-6">
                 <div className="max-w-sm md:max-w-xm">
                   <h3 className="font-semibold text-xl mb-2">Full Package</h3>
