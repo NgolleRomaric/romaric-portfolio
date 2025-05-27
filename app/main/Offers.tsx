@@ -16,26 +16,30 @@ export default function Offers() {
           complete digital identity.
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-2.5 mt-12">
-          <div className="flex flex-col bg-card border border-black/20 rounded-2xl py-5 w-[270px] mx-auto">
-            <div className="border-b border-black/20 pb-2 ">
+          <div className="flex flex-col bg-card border border-black/20 dark:border-white/20 rounded-2xl py-5 w-[270px] mx-auto">
+            <div className="border-b border-black/20 dark:border-white/20 pb-2 ">
               <div className="flex flex-col items-center justify-center px-6">
-                <div className="text-center text-xl font-medium bg-white rounded-md px-8 py-2 mx-auto w-fit">
+                <div className="text-center text-xl font-medium bg-white dark:bg-white/20 rounded-md px-8 py-2 mx-auto w-fit">
                   Graphic Design
                 </div>
                 <div className="flex items-center justify-between gap-16 mt-6 w-fit mx-auto">
-                  <p className="text-black/70">Starting at</p>
-                  <span className="text-center text-xl font-bold bg-primary rounded-xl px-1.5 py-1.5 mx-auto w-fit">
+                  <p className="text-black/70 dark:text-white/70">
+                    Starting at
+                  </p>
+                  <span className="text-center text-xl font-bold dark:text-black bg-primary rounded-xl px-1.5 py-1.5 mx-auto w-fit">
                     $ 250
                   </span>
                 </div>
-                <p className="text-black/70 mt-6 mb-6">
+                <p className="text-black/70 dark:text-white/70 mt-6 mb-6">
                   Ideal for: Logos, brand identity, marketing visuals
                 </p>
               </div>
             </div>
             <div className="mt-8">
               <div className="flex flex-col items-start justify-center px-6">
-                <p className="text-black/70 font-medium">Includes :</p>
+                <p className="text-black/70 dark:text-white/70 font-medium">
+                  Includes :
+                </p>
                 <div className="flex flex-col items-start justify-between gap-4 mt-6">
                   <div className="flex space-x-3 items-center">
                     <CircleCheck
@@ -88,26 +92,30 @@ export default function Offers() {
               </Button>
             </Link>
           </div>
-          <div className="flex flex-col bg-card border border-black/20 rounded-2xl py-5 w-[270px] mx-auto">
-            <div className="border-b border-black/20 pb-2 ">
+          <div className="flex flex-col bg-card border border-black/20 dark:border-white/20 rounded-2xl py-5 w-[270px] mx-auto">
+            <div className="border-b border-black/20 dark:border-white/20 pb-2 ">
               <div className="flex flex-col items-center justify-center px-6">
-                <div className="text-center text-xl font-medium bg-white rounded-md px-8 py-2 mx-auto w-fit">
+                <div className="text-center text-xl font-medium bg-white dark:bg-white/20 rounded-md px-8 py-2 mx-auto w-fit">
                   UI/UX Design
                 </div>
                 <div className="flex items-center justify-between gap-16 mt-6 w-fit mx-auto">
-                  <p className="text-black/70">Starting at</p>
-                  <span className="text-center text-xl font-bold bg-primary rounded-xl px-1.5 py-1.5 mx-auto w-fit">
+                  <p className="text-black/70 dark:text-white/70">
+                    Starting at
+                  </p>
+                  <span className="text-center text-xl font-bold dark:text-black bg-primary rounded-xl px-1.5 py-1.5 mx-auto w-fit">
                     $ 500
                   </span>
                 </div>
-                <p className="text-black/70 mt-6 mb-6">
+                <p className="text-black/70 dark:text-white/70 mt-6 mb-6">
                   Ideal for: Website or app UI, dashboards
                 </p>
               </div>
             </div>
             <div className="mt-8">
               <div className="flex flex-col items-start justify-center px-6">
-                <p className="text-black/70 font-medium">Includes :</p>
+                <p className="text-black/70 dark:text-white/70 font-medium">
+                  Includes :
+                </p>
                 <div className="flex flex-col items-start justify-between gap-4 mt-6">
                   <div className="flex space-x-3 items-start">
                     <CircleCheck
@@ -162,26 +170,30 @@ export default function Offers() {
               </Button>
             </Link>
           </div>
-          <div className="flex flex-col bg-card border border-black/20 rounded-2xl py-5 w-[270px] mx-auto">
-            <div className="border-b border-black/20 pb-2 ">
+          <div className="flex flex-col bg-card border border-black/20 dark:border-white/20 rounded-2xl py-5 w-[270px] mx-auto">
+            <div className="border-b border-black/20 dark:border-white/20 pb-2 ">
               <div className="flex flex-col items-center justify-center px-6">
-                <div className="text-center text-xl font-medium bg-white rounded-md px-8 py-2 mx-auto w-fit">
+                <div className="text-center text-xl font-medium bg-white dark:bg-white/20 rounded-md px-8 py-2 mx-auto w-fit">
                   Front-End Dev
                 </div>
                 <div className="flex items-center justify-between gap-16 mt-6 w-fit mx-auto">
-                  <p className="text-black/70">Starting at</p>
-                  <span className="text-center text-xl font-bold bg-primary rounded-xl px-1.5 py-1.5 mx-auto w-fit">
+                  <p className="text-black/70 dark:text-white/70">
+                    Starting at
+                  </p>
+                  <span className="text-center text-xl font-bold dark:text-black bg-primary rounded-xl px-1.5 py-1.5 mx-auto w-fit">
                     $ 600
                   </span>
                 </div>
-                <p className="text-black/70 mt-6 mb-6">
+                <p className="text-black/70 dark:text-white/70 mt-6 mb-6">
                   Ideal for: Landing pages, portfolios, small websites
                 </p>
               </div>
             </div>
             <div className="mt-8">
               <div className="flex flex-col items-start justify-center px-6">
-                <p className="text-black/70 font-medium">Includes :</p>
+                <p className="text-black/70 dark:text-white/70 font-medium">
+                  Includes :
+                </p>
                 <div className="flex flex-col items-start justify-between gap-4 mt-6">
                   <div className="flex space-x-3 items-start">
                     <CircleCheck
@@ -237,12 +249,12 @@ export default function Offers() {
           <div className="flex flex-col bg-primary border border-black/20 rounded-2xl py-5 w-[270px] mx-auto">
             <div className="border-b border-black/20 pb-2 ">
               <div className="flex flex-col items-center justify-center px-6">
-                <div className="text-center text-xl font-medium bg-white rounded-md px-16 py-2 mx-auto w-fit">
+                <div className="text-center dark:text-black text-xl font-medium bg-white rounded-md px-16 py-2 mx-auto w-fit">
                   Full Pack
                 </div>
                 <div className="flex items-center justify-between gap-14 mt-6 w-fit mx-auto">
                   <p className="text-black/70">Starting at</p>
-                  <span className="text-center text-xl font-bold bg-white rounded-xl px-1.5 py-1.5 mx-auto w-fit">
+                  <span className="text-center text-xl dark:text-black font-bold bg-white rounded-xl px-1.5 py-1.5 mx-auto w-fit">
                     $ 1000
                   </span>
                 </div>
@@ -254,7 +266,7 @@ export default function Offers() {
             <div className="mt-8">
               <div className="flex flex-col items-start justify-center px-6">
                 <p className="text-black/70 font-medium">Includes :</p>
-                <div className="flex flex-col items-start justify-between gap-4 mt-6">
+                <div className="flex flex-col items-start dark:text-black justify-between gap-4 mt-6">
                   <div className="flex space-x-3 items-start">
                     <CircleCheck
                       size={22}

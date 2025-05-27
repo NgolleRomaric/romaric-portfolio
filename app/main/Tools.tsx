@@ -55,7 +55,7 @@ export default function Tools() {
               <h3 className="font-medium text-[20px] text-center">
                 Graphic Design & UI/UX
               </h3>
-              <p className="text-[13px] text-center text-black/70 max-w-[250px] mt-3">
+              <p className="text-[13px] text-center text-black/70 dark:text-white/70 max-w-[250px] mt-3">
                 Essential tools for designing stunning visuals and intuitive
                 user interfaces.
               </p>
@@ -75,7 +75,7 @@ export default function Tools() {
           <div className="lg:col-start-3 bg-card rounded-3xl py-10 px-14">
             <div className="flex flex-col items-center justify-center">
               <h3 className="font-medium text-[20px] text-center">AI Tools</h3>
-              <p className="text-[13px] text-center text-black/70 max-w-[250px] mt-3">
+              <p className="text-[13px] text-center text-black/70 dark:text-white/70 max-w-[250px] mt-3">
                 Leveraging artificial intelligence to boost creativity and
                 productivity.
               </p>
@@ -86,7 +86,11 @@ export default function Tools() {
                   src={logo.image}
                   key={logo.name}
                   alt={logo.name}
-                  className="w-16 h-auto"
+                  className={`w-16 h-auto ${
+                    logo.name === "ChatGpt"
+                      ? "dark:brightness-0 dark:invert"
+                      : ""
+                  }`}
                 />
               ))}
             </div>
@@ -96,7 +100,7 @@ export default function Tools() {
               <h3 className="font-medium text-[20px] text-center">
                 Others Tools
               </h3>
-              <p className="text-[13px] text-center text-black/70 max-w-[250px] mt-3">
+              <p className="text-[13px] text-center text-black/70 dark:text-white/70 max-w-[250px] mt-3">
                 Tools that help manage tasks, organize work, and streamline
                 client communication.
               </p>
@@ -117,7 +121,7 @@ export default function Tools() {
               <h3 className="font-medium text-[20px] text-center">
                 Front-End Development
               </h3>
-              <p className="text-[13px] text-center text-black/70 max-w-[250px] mt-3">
+              <p className="text-[13px] text-center text-black/70 dark:text-white/70 max-w-[250px] mt-3">
                 Tools for building fast, responsive, and interactive web
                 experiences.
               </p>
@@ -128,7 +132,11 @@ export default function Tools() {
                   src={logo.image}
                   key={logo.name}
                   alt={logo.name}
-                  className="w-16 h-auto"
+                  className={`w-16 h-auto ${
+                    logo.name === "GitHub"
+                      ? "dark:brightness-0 dark:invert"
+                      : ""
+                  }`}
                 />
               ))}
             </div>

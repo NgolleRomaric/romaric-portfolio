@@ -26,7 +26,7 @@ export default function Process() {
               <Phone size={24} strokeWidth={1.5} />
             </div>
             <h4 className="text-xm font-medium">Discovery Call</h4>
-            <p className="text-black/70 text-center text-sm">
+            <p className="text-black/70 dark:text-white/70 text-center text-sm">
               We discuss your project idea.
             </p>
           </Card>
@@ -35,7 +35,7 @@ export default function Process() {
               <StickyNote size={24} strokeWidth={1.5} />
             </div>
             <h4 className="text-xm font-medium">Brief & Objectives</h4>
-            <p className="text-black/70 text-center text-sm">
+            <p className="text-black/70 dark:text-white/70 text-center text-sm">
               You share your needs and vision.
             </p>
           </Card>
@@ -44,7 +44,7 @@ export default function Process() {
               <CalendarCheck2 size={24} strokeWidth={1.5} />
             </div>
             <h4 className="text-xm font-medium">Planning</h4>
-            <p className="text-black/70 text-center text-sm">
+            <p className="text-black/70 dark:text-white/70 text-center text-sm">
               I define the steps and timeline.
             </p>
           </Card>
@@ -53,7 +53,7 @@ export default function Process() {
               <MonitorCog size={24} strokeWidth={1.5} />
             </div>
             <h4 className="text-xm font-medium">Design & Creation</h4>
-            <p className="text-black/70 text-center text-sm">
+            <p className="text-black/70 dark:text-white/70 text-center text-sm">
               I create the visuals or start coding.
             </p>
           </Card>
@@ -64,7 +64,7 @@ export default function Process() {
             <h4 className="text-xm font-medium text-center">
               Revisions & Approval
             </h4>
-            <p className="text-black/70 text-center text-sm">
+            <p className="text-black/70 dark:text-white/70 text-center text-sm">
               You review and I will adjust accordingly.
             </p>
           </Card>
@@ -73,7 +73,7 @@ export default function Process() {
               <MailCheck size={24} strokeWidth={1.5} />
             </div>
             <h4 className="text-xm font-medium">Delivery & Support</h4>
-            <p className="text-black/70 text-center text-sm">
+            <p className="text-black/70 dark:text-white/70 text-center text-sm">
               You get the final files and support.
             </p>
           </Card>

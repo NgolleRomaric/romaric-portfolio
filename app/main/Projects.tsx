@@ -18,7 +18,7 @@ export default function Projects() {
           becomes experience.
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-2.5 mt-12 max-w-sm md:max-w-2xl lg:max-w-5xl mx-auto">
-          <Card className="flex flex-rows bg-card border-card lg:border-card lg:hover:border-border transition-all duration-300 items-center justify-center rounded-2xl p-3">
+          <Card className="flex flex-rows bg-card lg:border-white dark:border-white/10 lg:dark:border-card lg:dark:hover:border-white/10 lg:hover:border-black/10 transition-all duration-300 items-center justify-center rounded-2xl p-3">
             <div>
               <Image
                 src={ImageZenya}
@@ -29,12 +29,12 @@ export default function Projects() {
             <div className="ml-2.5">
               <div>
                 <h3 className="text-xl font-medium">Zenya - Wellness Spa</h3>
-                <Badge className="text-sm bg-white text-black/70 font-normal px-3 py-1.5 mt-2">
+                <Badge className="text-sm bg-white dark:bg-white/70 text-black/70 font-normal px-3 py-1.5 mt-2">
                   Graphic Design
                 </Badge>
               </div>
               <div className="flex items-center justify-center gap-4 mt-3 mb-3">
-                <p className="text-black/70 lg:max-w-xl">
+                <p className="text-black/70 dark:text-white/70 lg:max-w-xl">
                   A calming and luxurious brand identity for a modern spa
                   experience.
                 </p>
@@ -48,7 +48,7 @@ export default function Projects() {
               </div>
             </div>
           </Card>
-          <Card className="flex flex-rows bg-card border-card lg:border-card lg:hover:border-border transition-all duration-300 items-center justify-center rounded-2xl p-3">
+          <Card className="flex flex-rows bg-card lg:border-white dark:border-white/10 lg:dark:border-card lg:dark:hover:border-white/10 lg:hover:border-black/10 transition-all duration-300 items-center justify-center rounded-2xl p-3">
             <div>
               <Image
                 src={FictifProject}
@@ -59,12 +59,12 @@ export default function Projects() {
             <div className="ml-2.5">
               <div>
                 <h3 className="text-xl font-medium">Zenya - Wellness Spa</h3>
-                <Badge className="text-sm bg-white text-black/70 font-normal px-3 py-1.5 mt-2">
+                <Badge className="text-sm bg-white dark:bg-white/70 text-black/70 font-normal px-3 py-1.5 mt-2">
                   Graphic Design
                 </Badge>
               </div>
               <div className="flex items-center justify-center gap-4 mt-3 mb-3">
-                <p className="text-black/70 lg:max-w-xl">
+                <p className="text-black/70 dark:text-white/70 lg:max-w-xl">
                   A calming and luxurious brand identity for a modern spa
                   experience.
                 </p>
@@ -78,7 +78,7 @@ export default function Projects() {
               </div>
             </div>
           </Card>
-          <Card className="flex flex-rows bg-card border-card lg:border-card lg:hover:border-border transition-all duration-300 items-center justify-center rounded-2xl p-3">
+          <Card className="flex flex-rows bg-card lg:border-white dark:border-white/10 lg:dark:border-card lg:dark:hover:border-white/10 lg:hover:border-black/10 transition-all duration-300 items-center justify-center rounded-2xl p-3">
             <div>
               <Image
                 src={ImageZenya}
@@ -89,12 +89,12 @@ export default function Projects() {
             <div className="ml-2.5">
               <div>
                 <h3 className="text-xl font-medium">Zenya - Wellness Spa</h3>
-                <Badge className="text-sm bg-white text-black/70 font-normal px-3 py-1.5 mt-2">
+                <Badge className="text-sm bg-white dark:bg-white/70 text-black/70 font-normal px-3 py-1.5 mt-2">
                   Graphic Design
                 </Badge>
               </div>
               <div className="flex items-center justify-center gap-4 mt-3 mb-3">
-                <p className="text-black/70 lg:max-w-xl">
+                <p className="text-black/70 dark:text-white/70 lg:max-w-xl">
                   A calming and luxurious brand identity for a modern spa
                   experience.
                 </p>
@@ -108,7 +108,7 @@ export default function Projects() {
               </div>
             </div>
           </Card>
-          <Card className="flex flex-rows bg-card border-card lg:border-card lg:hover:border-border transition-all duration-300 items-center justify-center rounded-2xl p-3">
+          <Card className="flex flex-rows bg-card lg:border-white dark:border-white/10 lg:dark:border-card lg:dark:hover:border-white/10 lg:hover:border-black/10 transition-all duration-300 items-center justify-center rounded-2xl p-3">
             <div>
               <Image
                 src={ImageZenya}
@@ -119,12 +119,12 @@ export default function Projects() {
             <div className="ml-2.5">
               <div>
                 <h3 className="text-xl font-medium">Zenya - Wellness Spa</h3>
-                <Badge className="text-sm bg-white text-black/70 font-normal px-3 py-1.5 mt-2">
+                <Badge className="text-sm bg-white dark:bg-white/70 text-black/70 font-normal px-3 py-1.5 mt-2">
                   Graphic Design
                 </Badge>
               </div>
               <div className="flex items-center justify-center gap-4 mt-3 mb-3">
-                <p className="text-black/70 lg:max-w-xl">
+                <p className="text-black/70 dark:text-white/70 lg:max-w-xl">
                   A calming and luxurious brand identity for a modern spa
                   experience.
                 </p>
@@ -139,7 +139,7 @@ export default function Projects() {
             </div>
           </Card>
         </div>
-        <Button className="px-6 py-5 text-md mt-10 text-black font-medium border bg-white hover:bg-white hover:opacity-50 transition-opacity">
+        <Button className="px-6 py-5 text-md mt-10 text-black font-medium border dark:text-white dark:border-white/70 dark:bg-background hover:opacity-50 transition-opacity">
           View my work <ArrowRight className="ml-1" />
         </Button>
       </div>

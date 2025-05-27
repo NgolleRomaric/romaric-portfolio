@@ -138,7 +138,7 @@ export default function Testimonials() {
                         <h4 className="text-lg font-semibold">
                           {testimonial.name}
                         </h4>
-                        <p className="text-sm text-black/70">
+                        <p className="text-sm text-black/70 dark:text-white/70">
                           {testimonial.role}
                         </p>
                       </div>

@@ -26,7 +26,7 @@ export default function Hero() {
             years, I’ve been turning ideas into strong visual identities and
             clear, modern web interfaces.
           </p>
-          <p className="text-black/70 text-sm mt-4">
+          <p className="text-black/70 text-sm dark:text-white/70 mt-4">
             I believe great design is more than just beautiful: it’s functional,
             smooth, and made with people in mind. And since I like to see things
             move forward, I also take design into code, bringing projects to
@@ -35,7 +35,7 @@ export default function Hero() {
           <div className="flex flex-col lg:flex-row  items-center justify-center gap-4 lg:gap-12 mt-8">
             <BookCallButton />
             <Link href="/CV-Romaric-Ngolle.pdf" download>
-              <Button className="px-6 py-5 text-md text-black font-medium border bg-white hover:bg-white hover:opacity-50 transition-opacity">
+              <Button className="px-6 py-5 text-md text-black font-medium border bg-white dark:text-white dark:border-white/70 dark:bg-background hover:opacity-50 transition-opacity">
                 Download CV <FileDown className="ml-1" />
               </Button>
             </Link>

@@ -24,14 +24,16 @@ export default function Services() {
         <h2 className="text-center font-medium text-3xl mt-8 max-w-sm md:max-w-xl lg:max-w-2xl mx-auto">
           From idea to interface, I help brands look sharp and work beautifully
         </h2>
+
+        {/* Mobile */}
         <div className="container md:hidden lg:hidden">
-          <Card className="rounded-2xl border-border p-8 bg-card relative overflow-hidden max-w-sm mx-auto mt-12 dark:border">
+          <Card className="rounded-2xl p-8 bg-card relative overflow-hidden max-w-sm mx-auto mt-12 dark:border-white/21">
             <div>
               <h3 className="font-semibold text-2xl mb-2">Graphic Design</h3>
-              <h4 className="text-gray-500 text-xm">
+              <h4 className="text-gray-500 dark:text-white/70 text-xm">
                 Visual identities / flyers / posters / packaging...
               </h4>
-              <p className="text-gray-400 text-sm mb-6">
+              <p className="text-gray-400 dark:text-white/50 text-sm mb-6">
                 Build a strong and memorable brand image.
               </p>
               <Image
@@ -42,7 +44,7 @@ export default function Services() {
               />
             </div>
           </Card>
-          <Card className="rounded-2xl border-border p-8 bg-card relative overflow-hidden max-w-sm mx-auto mt-2.5 dark:border">
+          <Card className="rounded-2xl p-8 bg-card relative overflow-hidden max-w-sm mx-auto mt-2.5 dark:border-white/10">
             <Image
               src={ImageUIUXDesign}
               alt="ipsum"
@@ -51,15 +53,15 @@ export default function Services() {
             />
             <div className="mt-1">
               <h3 className="font-semibold text-2xl mb-2">UI/UX Design</h3>
-              <h4 className="text-gray-500 text-xm">
+              <h4 className="text-gray-500 dark:text-white/70 text-xm">
                 Interface design / web & mobile mockups / prototypes
               </h4>
-              <p className="text-gray-400 text-sm">
+              <p className="text-gray-400 dark:text-white/50 text-sm">
                 Deliver smooth, intuitive, and enjoyable user experiences.
               </p>
             </div>
           </Card>
-          <Card className="rounded-2xl border-border p-8 bg-card relative overflow-hidden max-w-sm mx-auto mt-2.5 dark:border">
+          <Card className="rounded-2xl p-8 bg-card relative overflow-hidden max-w-sm mx-auto mt-2.5 dark:border-white/10">
             <Image
               src={ImageFrontEnd}
               alt="ipsum"
@@ -68,21 +70,21 @@ export default function Services() {
             />
             <div className="mt-1">
               <h3 className="font-semibold text-2xl mb-2">UI/UX Design</h3>
-              <h4 className="text-gray-500 text-xm">
+              <h4 className="text-gray-500 dark:text-white/70 text-xm">
                 Interface design / web & mobile mockups / prototypes
               </h4>
-              <p className="text-gray-400 text-sm">
+              <p className="text-gray-400 dark:text-white/50 text-sm">
                 Deliver smooth, intuitive, and enjoyable user experiences.
               </p>
             </div>
           </Card>
-          <Card className="rounded-2xl border-border p-8 bg-card relative overflow-hidden max-w-sm mx-auto mt-2.5 dark:border">
+          <Card className="rounded-2xl p-8 bg-card relative overflow-hidden max-w-sm mx-auto mt-2.5 dark:border-white/10">
             <div className="container">
               <h3 className="font-semibold text-2xl mb-2">Full Package</h3>
-              <h4 className="text-gray-500 text-xm">
+              <h4 className="text-gray-500 dark:text-white/70 text-xm">
                 Graphic Design + UI/UX + Front-End Dev
               </h4>
-              <p className="text-gray-400 text-sm mb-6">
+              <p className="text-gray-400 dark:text-white/50 text-sm mb-6">
                 From concept to launch — a complete solution for your digital
                 project.
               </p>
@@ -94,16 +96,18 @@ export default function Services() {
             </div>
           </Card>
         </div>
+
+        {/* Desktop */}
         <div className="flex items-center justify-center mt-12 hidden lg:max-w-5xl md:max-w-2xl mx-auto md:block lg:block">
           <div className="grid grid-cols-3 grid-rows-4 gap-2.5">
-            <Card className="col-span-2 row-span-3 items-center justify-center rounded-2xl bg-card p-5 border-card hover:border hover:border-border transition-all duration-300">
+            <Card className="col-span-2 row-span-3 items-center justify-center rounded-2xl bg-card p-5 lg:border-white dark:border-secondary lg:dark:border-card lg:dark:hover:border-white/10 lg:hover:border-black/10 transition-all duration-300">
               <div className="container">
                 <div className="mb-5">
                   <h3 className="font-semibold text-xl ml-4">Graphic Design</h3>
-                  <h4 className="text-gray-500 text-[15px] ml-4">
+                  <h4 className="text-gray-500 dark:text-white/70 text-[15px] ml-4">
                     Visual identities / flyers / posters / packaging...
                   </h4>
-                  <p className="text-gray-400 text-[12px] mb-6 ml-4">
+                  <p className="text-gray-400 dark:text-white/50 text-[12px] mb-6 ml-4">
                     Build a strong and memorable brand image.
                   </p>
                 </div>
@@ -115,7 +119,7 @@ export default function Services() {
                 />
               </div>
             </Card>
-            <Card className="col-span-1 row-span-2 items-center justify-center rounded-2xl bg-card p-5 border-card hover:border hover:border-border transition-all duration-300">
+            <Card className="col-span-1 row-span-2 items-center justify-center rounded-2xl bg-card p-5 lg:border-white dark:border-secondary lg:dark:border-card lg:dark:hover:border-white/10 lg:hover:border-black/10 transition-all duration-300">
               <Image
                 src={ImageUIUXDesign}
                 alt="ipsum"
@@ -124,15 +128,15 @@ export default function Services() {
               />
               <div className="container">
                 <h3 className="font-semibold text-xl">UI/UX Design</h3>
-                <h4 className="text-gray-500 text-[15px]">
+                <h4 className="text-gray-500 dark:text-white/70 text-[15px]">
                   Interface design / web & mobile mockups / prototypes
                 </h4>
-                <p className="text-gray-400 text-[12px]">
+                <p className="text-gray-400 dark:text-white/50 text-[12px]">
                   Deliver smooth, intuitive, and enjoyable user experiences.
                 </p>
               </div>
             </Card>
-            <Card className="col-span-1 row-span-3 items-center justify-center rounded-2xl bg-card p-5 border-card hover:border hover:border-border transition-all duration-300">
+            <Card className="col-span-1 row-span-3 items-center justify-center rounded-2xl bg-card p-5 lg:border-white dark:border-secondary lg:dark:border-card lg:dark:hover:border-white/10 lg:hover:border-black/10 transition-all duration-300">
               <Image
                 src={ImageFrontEnd}
                 alt="ipsum"
@@ -141,22 +145,22 @@ export default function Services() {
               />
               <div className="container">
                 <h3 className="font-semibold text-xl">Front-End Development</h3>
-                <h4 className="text-gray-500 text-[15px]">
+                <h4 className="text-gray-500 dark:text-white/70 text-[15px]">
                   Showcase websites / landing pages / web integration
                 </h4>
-                <p className="text-gray-400 text-[12px]">
+                <p className="text-gray-400 dark:text-white/50 text-[12px]">
                   Bring your designs to life with clean, responsive code.
                 </p>
               </div>
             </Card>
-            <Card className="col-span-2 row-span-2 items-center justify-center rounded-2xl bg-card p-5 border-card hover:border hover:border-border transition-all duration-300">
+            <Card className="col-span-2 row-span-2 items-center justify-center rounded-2xl bg-card p-5 lg:border-white dark:border-secondary lg:dark:border-card lg:dark:hover:border-white/10 lg:hover:border-black/10 transition-all duration-300">
               <div className="flex items-center justify-between lg:gap-12 md:gap-6">
                 <div className="max-w-sm md:max-w-xm">
                   <h3 className="font-semibold text-xl mb-2">Full Package</h3>
-                  <h4 className="text-gray-500 text-[15px]">
+                  <h4 className="text-gray-500 dark:text-white/70 text-[15px]">
                     Graphic Design + UI/UX + Front-End Dev
                   </h4>
-                  <p className="text-gray-400 text-[12px] ">
+                  <p className="text-gray-400 dark:text-white/50 text-[12px] ">
                     From concept to launch — a complete <br /> solution for your
                     digital project.
                   </p>

@@ -7,7 +7,7 @@ import FictifProject from "@/public/logo/fictif project.svg";
 import Kamtresses from "@/public/logo/kamtresses.svg";
 import Kask from "@/public/logo/kask.svg";
 import Makedecine from "@/public/logo/makedecine.svg";
-import OrniCrack from "@/public/logo/orni crack.svg";
+//import OrniCrack from "@/public/logo/orni crack.svg";
 import PlantAgrico from "@/public/logo/plant agrico.svg";
 import SamShopping from "@/public/logo/Sam shoping.svg";
 import SmartVaccin from "@/public/logo/smart vaccin.svg";
@@ -19,11 +19,11 @@ import React, { Fragment } from "react";
 const logos = [
   { name: "CH Event", image: CHEvent, with: 94, hight: 100 },
   { name: "Reinas Touch", image: ReinasTouch, with: 180, hight: 60 },
-  { name: "Fictif Project", image: FictifProject, with: 80, hight: 80 },
+  { name: "Fictif Project", image: FictifProject, with: 246, hight: 59 },
   { name: "Kamtresses", image: Kamtresses, with: 179, hight: 63 },
   { name: "Kask", image: Kask, with: 181, hight: 60 },
   { name: "Makedecine", image: Makedecine, with: 96, hight: 100 },
-  { name: "Orni Crack", image: OrniCrack, with: 84, hight: 100 },
+  //{ name: "Orni Crack", image: OrniCrack, with: 84, hight: 100 },
   { name: "Plant Agrico", image: PlantAgrico, with: 210, hight: 64 },
   { name: "Sam Shopping", image: SamShopping, with: 168, hight: 60 },
   { name: "Smart Vaccin", image: SmartVaccin, with: 236, hight: 60 },
