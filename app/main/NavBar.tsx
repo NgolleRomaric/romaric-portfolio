@@ -39,7 +39,7 @@ export default function NavBar() {
               <li>
                 <Link
                   href="/about"
-                  className="text-black dark:text-white hover:text-black/50 transition-colors"
+                  className="text-black dark:text-white dark:hover:opacity-50 hover:text-black/50 transition-colors"
                 >
                   About
                 </Link>
@@ -47,7 +47,7 @@ export default function NavBar() {
               <li>
                 <Link
                   href="/#services" // Modification ici
-                  className="text-black dark:text-white hover:text-black/50 transition-colors"
+                  className="text-black dark:text-white dark:hover:opacity-50 hover:text-black/50 transition-colors"
                 >
                   Services
                 </Link>
@@ -55,7 +55,7 @@ export default function NavBar() {
               <li>
                 <Link
                   href="/projet"
-                  className="text-black dark:text-white hover:text-black/50 transition-colors"
+                  className="text-black dark:text-white dark:hover:opacity-50 hover:text-black/50 transition-colors"
                 >
                   Projects
                 </Link>
@@ -63,7 +63,7 @@ export default function NavBar() {
               <li>
                 <Link
                   href="/#offers" // Modification ici
-                  className="text-black dark:text-white hover:text-black/50 transition-colors"
+                  className="text-black dark:text-white dark:hover:opacity-50 hover:text-black/50 transition-colors"
                 >
                   Offers
                 </Link>
@@ -71,7 +71,7 @@ export default function NavBar() {
               <li>
                 <Link
                   href="/blog"
-                  className="text-black dark:text-white hover:text-black/50 transition-colors"
+                  className="text-black dark:text-white dark:hover:opacity-50 hover:text-black/50 transition-colors"
                 >
                   Blog
                 </Link>
