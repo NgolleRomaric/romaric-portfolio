@@ -33,7 +33,7 @@ export default function Hero() {
           </h2>
         </div>
         <div className="flex flex-col lg:flex-row items-center justify-center gap-4 lg:gap-12">
-          <Link href="/project">
+          <Link href="/projet">
             <Button className="px-6 py-5 text-md text-black font-medium bg-white hover:bg-white hover:opacity-50 transition-opacity">
               View my work <ArrowRight className="ml-1" />
             </Button>

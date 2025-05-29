@@ -149,7 +149,7 @@ export default function Projects() {
             </div>
           </Card>
         </div>
-        <Link href="/project">
+        <Link href="/projet">
           <Button className="px-6 py-5 text-md mt-10 bg-white hover:bg-white text-black font-medium border dark:text-white dark:border-white/70 dark:bg-background hover:opacity-50 transition-opacity">
             View my work <ArrowRight className="ml-1" />
           </Button>
