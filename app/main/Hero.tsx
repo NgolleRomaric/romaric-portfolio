@@ -6,6 +6,7 @@ import { ArrowRight } from "lucide-react";
 //import { TextAnimate } from "@/components/magicui/text-animate";
 import Image from "next/image";
 import { BookCallButton } from "@/components/ui/book-call-button";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -32,9 +33,11 @@ export default function Hero() {
           </h2>
         </div>
         <div className="flex flex-col lg:flex-row items-center justify-center gap-4 lg:gap-12">
-          <Button className="px-6 py-5 text-md text-black font-medium bg-white hover:bg-white hover:opacity-50 transition-opacity">
-            View my work <ArrowRight className="ml-1" />
-          </Button>
+          <Link href="/project">
+            <Button className="px-6 py-5 text-md text-black font-medium bg-white hover:bg-white hover:opacity-50 transition-opacity">
+              View my work <ArrowRight className="ml-1" />
+            </Button>
+          </Link>
           <BookCallButton />
         </div>
       </div>

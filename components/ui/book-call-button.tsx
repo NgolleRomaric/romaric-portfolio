@@ -5,7 +5,7 @@ import IconCall from "@/public/call icon.svg";
 export function BookCallButton() {
   return (
     <Button
-      className="px-6 py-5 text-md text-white font-medium bg-gradient-to-r from-black from-[65%] to-[#666666] to-[100%] border-0 hover:opacity-80 transition-opacity"
+      className="px-6 py-5 text-md text-white font-medium bg-gradient-to-r from-black from-[65%] to-[#666666] to-[100%] border-0 hover:opacity-80 transition-opacity group"
       asChild
     >
       <a
@@ -15,7 +15,11 @@ export function BookCallButton() {
       >
         Book a call
         <span>
-          <Image src={IconCall} alt="IconCall" />
+          <Image
+            src={IconCall}
+            alt="IconCall"
+            className="group-hover:animate-bounce"
+          />
         </span>
       </a>
     </Button>

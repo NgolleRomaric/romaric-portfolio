@@ -69,12 +69,14 @@ export default function Services() {
               height={142.91}
             />
             <div className="mt-1">
-              <h3 className="font-semibold text-2xl mb-2">UI/UX Design</h3>
+              <h3 className="font-semibold text-2xl mb-2">
+                Front-End Development
+              </h3>
               <h4 className="text-gray-500 dark:text-white/70 text-xm">
-                Interface design / web & mobile mockups / prototypes
+                Showcase websites / landing pages / web integration
               </h4>
               <p className="text-gray-400 dark:text-white/50 text-sm">
-                Deliver smooth, intuitive, and enjoyable user experiences.
+                Bring your designs to life with clean, responsive code.
               </p>
             </div>
           </Card>

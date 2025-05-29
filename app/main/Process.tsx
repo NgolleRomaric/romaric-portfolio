@@ -21,7 +21,7 @@ export default function Process() {
           functional design solutions.
         </h2>
         <div className="grid grid-cols-2 mt-12 mb-8 md:grid-cols-3 gap-2.5  md:max-w-2xl lg:max-w-5xl mx-auto">
-          <Card className="flex flex-col items-center border-none gap-4 justify-between rounded-2xl p-5 max-w-[180px]">
+          <Card className="flex flex-col items-center border-none gap-4 justify-between rounded-2xl px-2.5 py-7 max-w-[180px]">
             <div className="p-4 bg-primary rounded-full">
               <Phone size={24} strokeWidth={1.5} />
             </div>

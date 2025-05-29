@@ -99,7 +99,11 @@ export default function NavBar() {
               }}
               transition={{ duration: 0.15 }}
             >
-              <AlignRight />
+              <AlignRight
+                size={24}
+                strokeWidth={1.5}
+                className="text-black/50 dark:text-white/50"
+              />
             </motion.div>
             <motion.div
               className="absolute"
@@ -110,9 +114,9 @@ export default function NavBar() {
               transition={{ duration: 0.15 }}
             >
               <X
-                size={32}
+                size={24}
                 strokeWidth={1.5}
-                className="text-black/30 dark:text-white"
+                className="text-black/50 dark:text-white/50"
               />
             </motion.div>
           </motion.button>

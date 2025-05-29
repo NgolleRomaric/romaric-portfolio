@@ -32,7 +32,7 @@ export function ThemeToggle() {
         transition={{ duration: 0.2, ease: "easeInOut" }}
         className="absolute"
       >
-        <Sun size={20} className="text-foreground" />
+        <Sun size={24} className="text-black/50" />
       </motion.div>
       <motion.div
         initial={{ opacity: 0, scale: 0.5 }}
@@ -44,7 +44,7 @@ export function ThemeToggle() {
         transition={{ duration: 0.2, ease: "easeInOut" }}
         className="absolute"
       >
-        <Moon size={20} className="text-foreground" />
+        <Moon size={24} className="text-white/50" />
       </motion.div>
     </motion.div>
   );

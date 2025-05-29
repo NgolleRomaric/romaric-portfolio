@@ -84,10 +84,14 @@ export default function Offers() {
               rel="noopener noreferrer"
               className="mx-auto"
             >
-              <Button className="px-6 py-5 text-md text-white font-medium mt-16 mx-6 bg-gradient-to-r from-black from-[65%] to-[#666666] to-[100%] border-0 hover:opacity-80 transition-opacity">
+              <Button className="px-6 py-5 text-md text-white font-medium mt-16 mx-6 bg-gradient-to-r from-black from-[65%] to-[#666666] to-[100%] border-0 hover:opacity-80 transition-opacity group">
                 Request a quote
                 <span>
-                  <Image src={IconCall} alt="IconCall" />
+                  <Image
+                    src={IconCall}
+                    alt="IconCall"
+                    className="group-hover:animate-bounce"
+                  />
                 </span>
               </Button>
             </Link>
@@ -162,10 +166,14 @@ export default function Offers() {
               rel="noopener noreferrer"
               className="mx-auto"
             >
-              <Button className="px-6 py-5 text-md text-white font-medium mt-11 mx-6 bg-gradient-to-r from-black from-[65%] to-[#666666] to-[100%] border-0 hover:opacity-80 transition-opacity">
+              <Button className="px-6 py-5 text-md text-white font-medium mt-11 mx-6 bg-gradient-to-r from-black from-[65%] to-[#666666] to-[100%] border-0 hover:opacity-80 transition-opacity group">
                 Request a quote
                 <span>
-                  <Image src={IconCall} alt="IconCall" />
+                  <Image
+                    src={IconCall}
+                    alt="IconCall"
+                    className="group-hover:animate-bounce"
+                  />
                 </span>
               </Button>
             </Link>
@@ -238,10 +246,14 @@ export default function Offers() {
               rel="noopener noreferrer"
               className="mx-auto"
             >
-              <Button className="px-6 py-5 text-md text-white font-medium mt-16 mx-6 bg-gradient-to-r from-black from-[65%] to-[#666666] to-[100%] border-0 hover:opacity-80 transition-opacity">
+              <Button className="px-6 py-5 text-md text-white font-medium mt-16 mx-6 bg-gradient-to-r from-black from-[65%] to-[#666666] to-[100%] border-0 hover:opacity-80 transition-opacity group">
                 Request a quote
                 <span>
-                  <Image src={IconCall} alt="IconCall" />
+                  <Image
+                    src={IconCall}
+                    alt="IconCall"
+                    className="group-hover:animate-bounce"
+                  />
                 </span>
               </Button>
             </Link>
@@ -308,10 +320,14 @@ export default function Offers() {
               rel="noopener noreferrer"
               className="mx-auto"
             >
-              <Button className="px-6 py-5 text-md text-white font-medium mt-11 mx-6 bg-gradient-to-r from-black from-[65%] to-[#666666] to-[100%] border-0 hover:opacity-80 transition-opacity">
+              <Button className="px-6 py-5 text-md text-white font-medium mt-11 mx-6 bg-gradient-to-r from-black from-[65%] to-[#666666] to-[100%] border-0 hover:opacity-80 transition-opacity group">
                 Request a quote
                 <span>
-                  <Image src={IconCall} alt="IconCall" />
+                  <Image
+                    src={IconCall}
+                    alt="IconCall"
+                    className="group-hover:animate-bounce"
+                  />
                 </span>
               </Button>
             </Link>
