@@ -61,7 +61,9 @@ export default function Projects() {
             </div>
             <div className="ml-2.5">
               <div>
-                <h3 className="text-xl font-medium">Zenya - Wellness Spa</h3>
+                <h3 className="text-xl font-medium">
+                  Fictif Project – Creative Brief Generator
+                </h3>
                 <div className="flex items-center gap-2">
                   <Badge className="text-sm bg-white dark:bg-white/70 text-black/70 font-normal px-3 py-1.5 mt-2">
                     Graphic Design
@@ -73,8 +75,7 @@ export default function Projects() {
               </div>
               <div className="flex items-center justify-center gap-4 mt-3 mb-3">
                 <p className="text-black/70 dark:text-white/70 lg:max-w-xl">
-                  A calming and luxurious brand identity for a modern spa
-                  experience.
+                  Creative challenge platform for designers and developers.
                 </p>
                 <div className="p-1.5 bg-primary rounded-full mr-2 hover:opacity-50 transition-opacity">
                   <ArrowUpRight
@@ -105,8 +106,7 @@ export default function Projects() {
               </div>
               <div className="flex items-center justify-center gap-4 mt-3 mb-3">
                 <p className="text-black/70 dark:text-white/70 lg:max-w-xl">
-                  A calming and luxurious brand identity for a modern spa
-                  experience.
+                  Mobiverse is an e-commerce application for selling phones
                 </p>
                 <div className="p-1.5 bg-primary rounded-full mr-2 hover:opacity-50 transition-opacity">
                   <ArrowUpRight
@@ -135,8 +135,7 @@ export default function Projects() {
               </div>
               <div className="flex items-center justify-center gap-4 mt-3 mb-3">
                 <p className="text-black/70 dark:text-white/70 lg:max-w-xl">
-                  A calming and luxurious brand identity for a modern spa
-                  experience.
+                  Fast food offering delicious burgers and refreshing drinks.
                 </p>
                 <div className="p-1.5 bg-primary rounded-full mr-2 hover:opacity-50 transition-opacity">
                   <ArrowUpRight
