@@ -10,18 +10,15 @@ import ImageMakedecine from "@/public/make.jpg";
 import ImageChevent from "@/public/ch event card.jpg";
 import ImageSV from "@/public/logo 3.jpg";
 import FictifProject from "@/public/fictif project.jpg";
-import { ArrowUpRight, ArrowRight } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
-
+//import Link from "next/link";
 
 export default function Projets() {
   return (
     <section className="mt-30 lg:mt-34 mb-30 px-2">
       <div className="flex flex-col items-center justify-center mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-2.5 max-w-sm md:max-w-2xl lg:max-w-5xl mx-auto">
-
           {/* Zenya */}
           <Card className="flex flex-rows bg-card lg:border-white dark:border-white/10 lg:dark:border-card lg:dark:hover:border-white/10 lg:hover:border-black/10 transition-all duration-300 items-center justify-center rounded-2xl p-3">
             <div>
@@ -174,7 +171,8 @@ export default function Projets() {
               </div>
               <div className="flex items-center justify-center gap-4 mt-3 mb-3">
                 <p className="text-black/70 dark:text-white/70 lg:max-w-xl">
-                Store offering a trendy selection of women’s clothing and accessories.
+                  Store offering a trendy selection of women’s clothing and
+                  accessories.
                 </p>
                 <div className="p-1.5 bg-primary rounded-full mr-2 hover:opacity-50 transition-opacity">
                   <ArrowUpRight
@@ -210,7 +208,8 @@ export default function Projets() {
               </div>
               <div className="flex items-center justify-center gap-4 mt-3 mb-3">
                 <p className="text-black/70 dark:text-white/70 lg:max-w-xl">
-                Store specializing in modern, high-performance audio headphones.
+                  Store specializing in modern, high-performance audio
+                  headphones.
                 </p>
                 <div className="p-1.5 bg-primary rounded-full mr-2 hover:opacity-50 transition-opacity">
                   <ArrowUpRight
@@ -241,7 +240,7 @@ export default function Projets() {
               </div>
               <div className="flex items-center justify-center gap-4 mt-3 mb-3">
                 <p className="text-black/70 dark:text-white/70 lg:max-w-xl">
-                Creative hair salon for all your hair styling needs.
+                  Creative hair salon for all your hair styling needs.
                 </p>
                 <div className="p-1.5 bg-primary rounded-full mr-2 hover:opacity-50 transition-opacity">
                   <ArrowUpRight
@@ -272,7 +271,8 @@ export default function Projets() {
               </div>
               <div className="flex items-center justify-center gap-4 mt-3 mb-3">
                 <p className="text-black/70 dark:text-white/70 lg:max-w-xl">
-                Convenient app to book and manage your vaccination appointments easily.
+                  Convenient app to book and manage your vaccination
+                  appointments easily.
                 </p>
                 <div className="p-1.5 bg-primary rounded-full mr-2 hover:opacity-50 transition-opacity">
                   <ArrowUpRight
@@ -303,7 +303,7 @@ export default function Projets() {
               </div>
               <div className="flex items-center justify-center gap-4 mt-3 mb-3">
                 <p className="text-black/70 dark:text-white/70 lg:max-w-xl">
-                Beauty salon dedicated to enhancing and caring for clients.
+                  Beauty salon dedicated to enhancing and caring for clients.
                 </p>
                 <div className="p-1.5 bg-primary rounded-full mr-2 hover:opacity-50 transition-opacity">
                   <ArrowUpRight
@@ -334,7 +334,8 @@ export default function Projets() {
               </div>
               <div className="flex items-center justify-center gap-4 mt-3 mb-3">
                 <p className="text-black/70 dark:text-white/70 lg:max-w-xl">
-                Event management and organization services for individuals and businesses.
+                  Event management and organization services for individuals and
+                  businesses.
                 </p>
                 <div className="p-1.5 bg-primary rounded-full mr-2 hover:opacity-50 transition-opacity">
                   <ArrowUpRight
@@ -473,4 +474,5 @@ export default function Projets() {
         </div>
       </div>
     </section>
-  )
+  );
+}
