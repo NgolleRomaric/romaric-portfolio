@@ -7,8 +7,11 @@ import ImageReina from "@/public/Reinas Touch.jpg";
 import ImageKask from "@/public/kask.jpg";
 import ImageKamtresses from "@/public/Kamtresses.jpg";
 import ImageMakedecine from "@/public/make.jpg";
+import ImageJerseys from "@/public/jersey day.jpg";
 import ImageBCQ from "@/public/tablier BCQ.jpg";
 import ImageSam from "@/public/cup sam shooping.jpg";
+import ImageOrni from "@/public/PAQUET ORNI CRACK.jpg";
+import ImageParoisse from "@/public/visuels paroisse.jpg";
 import ImageChevent from "@/public/ch event card.jpg";
 import ImageSV from "@/public/logo 3.jpg";
 import FictifProject from "@/public/fictif project.jpg";
@@ -385,21 +388,21 @@ export default function Projet() {
           <Card className="flex flex-rows bg-card lg:border-white dark:border-white/10 lg:dark:border-card lg:dark:hover:border-white/10 lg:hover:border-black/10 transition-all duration-300 items-center justify-center rounded-2xl p-3">
             <div>
               <Image
-                src={ImageHillaz}
+                src={ImageJerseys}
                 alt="alt"
                 className="w-[350px] h-[289px] lg:w-[539px] rounded-2xl object-cover"
               />
             </div>
             <div className="ml-2.5">
               <div>
-                <h3 className="text-xl font-medium">Hillaz Burgers</h3>
+                <h3 className="text-xl font-medium">Jersey&apos;s Day</h3>
                 <Badge className="text-sm bg-white dark:bg-white/70 text-black/70 font-normal px-3 py-1.5 mt-2">
                   Graphic Design
                 </Badge>
               </div>
               <div className="flex items-center justify-center gap-4 mt-3 mb-3">
                 <p className="text-black/70 dark:text-white/70 lg:max-w-xl">
-                  Fast food offering delicious burgers and refreshing drinks.
+                  Event celebrating retro football jerseys and their history.
                 </p>
                 <div className="p-1.5 bg-primary rounded-full mr-2 hover:opacity-50 transition-opacity">
                   <ArrowUpRight
@@ -416,21 +419,23 @@ export default function Projet() {
           <Card className="flex flex-rows bg-card lg:border-white dark:border-white/10 lg:dark:border-card lg:dark:hover:border-white/10 lg:hover:border-black/10 transition-all duration-300 items-center justify-center rounded-2xl p-3">
             <div>
               <Image
-                src={ImageHillaz}
+                src={ImageParoisse}
                 alt="alt"
                 className="w-[350px] h-[289px] lg:w-[539px] rounded-2xl object-cover"
               />
             </div>
             <div className="ml-2.5">
               <div>
-                <h3 className="text-xl font-medium">Hillaz Burgers</h3>
+                <h3 className="text-xl font-medium">
+                  Paroisse de Nkolmbong DLA
+                </h3>
                 <Badge className="text-sm bg-white dark:bg-white/70 text-black/70 font-normal px-3 py-1.5 mt-2">
                   Graphic Design
                 </Badge>
               </div>
               <div className="flex items-center justify-center gap-4 mt-3 mb-3">
                 <p className="text-black/70 dark:text-white/70 lg:max-w-xl">
-                  Fast food offering delicious burgers and refreshing drinks.
+                  Visuals to communicate events and movements in the church.
                 </p>
                 <div className="p-1.5 bg-primary rounded-full mr-2 hover:opacity-50 transition-opacity">
                   <ArrowUpRight
@@ -478,21 +483,21 @@ export default function Projet() {
           <Card className="flex flex-rows bg-card lg:border-white dark:border-white/10 lg:dark:border-card lg:dark:hover:border-white/10 lg:hover:border-black/10 transition-all duration-300 items-center justify-center rounded-2xl p-3">
             <div>
               <Image
-                src={ImageHillaz}
+                src={ImageOrni}
                 alt="alt"
                 className="w-[350px] h-[289px] lg:w-[539px] rounded-2xl object-cover"
               />
             </div>
             <div className="ml-2.5">
               <div>
-                <h3 className="text-xl font-medium">Hillaz Burgers</h3>
+                <h3 className="text-xl font-medium">Orni Crack</h3>
                 <Badge className="text-sm bg-white dark:bg-white/70 text-black/70 font-normal px-3 py-1.5 mt-2">
                   Graphic Design
                 </Badge>
               </div>
               <div className="flex items-center justify-center gap-4 mt-3 mb-3">
                 <p className="text-black/70 dark:text-white/70 lg:max-w-xl">
-                  Fast food offering delicious burgers and refreshing drinks.
+                  Crunchy and tasty plantain chips, perfect for sharing.
                 </p>
                 <div className="p-1.5 bg-primary rounded-full mr-2 hover:opacity-50 transition-opacity">
                   <ArrowUpRight

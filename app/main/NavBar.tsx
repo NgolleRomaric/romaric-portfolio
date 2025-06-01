@@ -22,7 +22,7 @@ export default function NavBar() {
 
   return (
     <section className="lg:mt-6 fixed w-full top-5 z-50 px-2">
-      <div className="p-2.5 border border-black/20 dark:border-border rounded-[35px] max-w-sm md:max-w-xl lg:max-w-5xl mx-auto backdrop-blur bg-white/30 dark:bg-secondary/90">
+      <div className="p-2.5 border border-black/20 dark:border-border rounded-[35px] max-w-sm md:max-w-xl lg:max-w-5xl mx-auto backdrop-blur bg-white/70 dark:bg-secondary/90">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="w-[50px] h-[50px]">
