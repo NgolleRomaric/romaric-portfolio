@@ -1,11 +1,11 @@
 import NavBar from "../main/NavBar";
-import Projets from "./section/Projets";
+import Projet from "./section/Projet";
 
-export default function Projet() {
+export default function ProjectPge() {
   return (
     <>
       <NavBar />
-      <Projets />
+      <Projet />
     </>
   );
 }

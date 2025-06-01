@@ -7,14 +7,15 @@ import ImageReina from "@/public/Reinas Touch.jpg";
 import ImageKask from "@/public/kask.jpg";
 import ImageKamtresses from "@/public/Kamtresses.jpg";
 import ImageMakedecine from "@/public/make.jpg";
+import ImageBCQ from "@/public/tablier BCQ.jpg";
+import ImageSam from "@/public/cup sam shooping.jpg";
 import ImageChevent from "@/public/ch event card.jpg";
 import ImageSV from "@/public/logo 3.jpg";
 import FictifProject from "@/public/fictif project.jpg";
 import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
-//import Link from "next/link";
 
-export default function Projets() {
+export default function Projet() {
   return (
     <section className="mt-30 lg:mt-34 mb-30 px-2">
       <div className="flex flex-col items-center justify-center mx-auto">
@@ -164,14 +165,14 @@ export default function Projets() {
             </div>
             <div className="ml-2.5">
               <div>
-                <h3 className="text-xl font-medium">Reina's Touch</h3>
+                <h3 className="text-xl font-medium">Reina&apos;s Touch</h3>
                 <Badge className="text-sm bg-white dark:bg-white/70 text-black/70 font-normal px-3 py-1.5 mt-2">
                   Graphic Design
                 </Badge>
               </div>
               <div className="flex items-center justify-center gap-4 mt-3 mb-3">
                 <p className="text-black/70 dark:text-white/70 lg:max-w-xl">
-                  Store offering a trendy selection of women’s clothing and
+                  Store offering a trendy selection of women&apos;s clothing and
                   accessories.
                 </p>
                 <div className="p-1.5 bg-primary rounded-full mr-2 hover:opacity-50 transition-opacity">
@@ -348,6 +349,38 @@ export default function Projets() {
             </div>
           </Card>
 
+          {/* Sam shopping */}
+          <Card className="flex flex-rows bg-card lg:border-white dark:border-white/10 lg:dark:border-card lg:dark:hover:border-white/10 lg:hover:border-black/10 transition-all duration-300 items-center justify-center rounded-2xl p-3">
+            <div>
+              <Image
+                src={ImageSam}
+                alt="alt"
+                className="w-[350px] h-[289px] lg:w-[539px] rounded-2xl object-cover"
+              />
+            </div>
+            <div className="ml-2.5">
+              <div>
+                <h3 className="text-xl font-medium">Sam shopping</h3>
+                <Badge className="text-sm bg-white dark:bg-white/70 text-black/70 font-normal px-3 py-1.5 mt-2">
+                  Graphic Design
+                </Badge>
+              </div>
+              <div className="flex items-center justify-center gap-4 mt-3 mb-3">
+                <p className="text-black/70 dark:text-white/70 lg:max-w-xl">
+                  Store offering a trendy selection of women&apos;s and
+                  men&apos;s clothing, shoes and accessories.
+                </p>
+                <div className="p-1.5 bg-primary rounded-full mr-2 hover:opacity-50 transition-opacity">
+                  <ArrowUpRight
+                    size={32}
+                    strokeWidth={2}
+                    className="text-white"
+                  />
+                </div>
+              </div>
+            </div>
+          </Card>
+
           {/* Jersey's day */}
           <Card className="flex flex-rows bg-card lg:border-white dark:border-white/10 lg:dark:border-card lg:dark:hover:border-white/10 lg:hover:border-black/10 transition-all duration-300 items-center justify-center rounded-2xl p-3">
             <div>
@@ -414,14 +447,14 @@ export default function Projets() {
           <Card className="flex flex-rows bg-card lg:border-white dark:border-white/10 lg:dark:border-card lg:dark:hover:border-white/10 lg:hover:border-black/10 transition-all duration-300 items-center justify-center rounded-2xl p-3">
             <div>
               <Image
-                src={ImageHillaz}
+                src={ImageBCQ}
                 alt="alt"
                 className="w-[350px] h-[289px] lg:w-[539px] rounded-2xl object-cover"
               />
             </div>
             <div className="ml-2.5">
               <div>
-                <h3 className="text-xl font-medium">Hillaz Burgers</h3>
+                <h3 className="text-xl font-medium">Burger Camer Queen</h3>
                 <Badge className="text-sm bg-white dark:bg-white/70 text-black/70 font-normal px-3 py-1.5 mt-2">
                   Graphic Design
                 </Badge>
