@@ -24,7 +24,7 @@ const socialLinks = [
   {
     name: "Twitter",
     icon: X,
-    url: "#",
+    url: "https://x.com/leo_ngolle",
   },
 ];
 
